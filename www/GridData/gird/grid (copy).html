@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      maximum-scale=1, user-scalable=no" />
+    <title>Ayana Renewable Power</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico" />
+    <!-- css files -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+    <style type="text/css">
+        #page {
+            color: black;
+        }
+        
+        #page:hover {
+            color: red;
+        }
+        
+        .more:hover {
+            background-color: white !important;
+        }
+        /* width */
+        
+         ::-webkit-scrollbar {
+            width: 12px;
+        }
+        /* Track */
+        
+         ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+        }
+        /* Handle */
+        
+         ::-webkit-scrollbar-thumb {
+            background: #61915a;
+            border-radius: 10px;
+        }
+        /* Handle on hover */
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: #426304;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header section start -->
+    <header>
+        <div class="row align-items-center no-gutters">
+            <div class="col-6">
+                <a href="javascript:void(0)" class="menu-icon">
+                    <svg width="18px" height="18px" viewBox="0 0 177 130">
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd">
+                <g id="svg" fill-rule="nonzero" fill="#000000">
+                  <path
+                    d="M0,0 L0,10 L176.724,10 L176.724,0 L0,0 Z M0,69.92
+                    L176.724,69.92 L176.724,59.92 L0,59.92 L0,69.92 Z M0,129.84
+                    L107.724,129.84 L107.724,119.84 L0,119.84 L0,129.84 Z"
+                    id="Shape"></path>
+                </g>
+              </g>
+            </svg>
+                </a>
+                <a href="#" class="brand-name">
+                    <img src="../../images/logo.jpg" />
+                </a>
+            </div>
+            <div class="col-6 text-right">
+                <ul class="list-inline info-list">
+                    <li class="list-inline-item username">
+                        <a href="#">Welcome Shashank!</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Profile">
+                            <svg x="0px" y="0px" width="22px" height="22px" viewBox="0 0 16
+                  16">
+                  <g transform="translate(0, 0)">
+                    <path
+                      data-color="color-2"
+                      d="M14.5,12.976a1,1,0,0,0-.426-.82A10.367,10.367,0,0,0,8,10.5a10.367,10.367,0,0,0-6.074,1.656,1,1,0,0,0-.426.82V15.5h13Z"
+                      fill="none"
+                      stroke="#61951a"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                    <circle
+                      cx="8"
+                      cy="4"
+                      r="3.5"
+                      fill="none"
+                      stroke="#61951a"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></circle>
+                  </g>
+                </svg>
+                        </a>
+                    </li>
+                    <li class="list-inline-item notifications">
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Notifications">
+                            <svg x="0px" y="0px" width="22px" height="22px" viewBox="0 0 16
+                  16">
+                  <g transform="translate(0, 0)">
+                    <path
+                      data-color="color-2"
+                      fill="none"
+                      stroke="#61951a"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-miterlimit="10"
+                      d="M10,13.5c0,1.105-0.895,2-2,2s-2-0.895-2-2"></path>
+                    <line
+                      fill="none"
+                      stroke="#61951a"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-miterlimit="10"
+                      x1="0.5"
+                      y1="11.5"
+                      x2="15.5"
+                      y2="11.5"></line>
+                    <path
+                      fill="none"
+                      stroke="#61951a"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-miterlimit="10"
+                      d="M14.5,11.5H15
+                      c-1.105,0-2.5-0.895-2.5-2V5c0-2.485-2.015-4.5-4.5-4.5h0C5.515,0.5,3.5,2.515,3.5,5v4.5c0,1.105-0.895,2-2,2"></path>
+                  </g>
+                </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Header section end -->
+
+    <!-- Navigation Section start -->
+    <section class="nav-section">
+        <ul class="list-unstyled">
+            <li>
+                <a href="#" class="active">
+                    <figure>
+                        <svg x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16
+                16">
+                <g transform="translate(0, 0)">
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    fill="none"
+                    stroke="#61951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    width="6"
+                    height="6"></rect>
+                  <rect
+                    data-color="color-2"
+                    x="9.5"
+                    y="0.5"
+                    fill="none"
+                    stroke="#61951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    width="6"
+                    height="6"></rect>
+                  <rect
+                    data-color="color-2"
+                    x="0.5"
+                    y="9.5"
+                    fill="none"
+                    stroke="#61951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    width="6"
+                    height="6"></rect>
+                  <rect
+                    x="9.5"
+                    y="9.5"
+                    fill="none"
+                    stroke="#61951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    width="6"
+                    height="6"></rect>
+                </g>
+              </svg>
+                    </figure>
+
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="grid.html">
+                    <figure>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 341.333 341.333" style="enable-background:new 0 0 341.333 341.333;" xml:space="preserve" width="16px" height="16px"
+                            class="">
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <rect x="128" y="128" width="85.333" height="85.333"
+                          data-original="#000000" class="active-path"
+                          data-old_color="#000000" fill="#61951a" />
+                          <rect x="0" y="0" width="85.333" height="85.333"
+                            data-original="#000000" class="active-path"
+                            data-old_color="#000000" fill="#61951a" />
+                            <rect x="128" y="256" width="85.333" height="85.333"
+                              data-original="#000000" class="active-path"
+                              data-old_color="#000000" fill="#61951a" />
+                              <rect x="0" y="128" width="85.333" height="85.333"
+                                data-original="#000000" class="active-path"
+                                data-old_color="#000000" fill="#61951a" />
+                                <rect x="0" y="256" width="85.333"
+                                  height="85.333" data-original="#000000"
+                                  class="active-path"
+                                  data-old_color="#000000" fill="#61951a" />
+                                  <rect x="256" y="0" width="85.333"
+                                    height="85.333" data-original="#000000"
+                                    class="active-path"
+                                    data-old_color="#000000" fill="#61951a" />
+                                    <rect x="128" y="0" width="85.333"
+                                      height="85.333" data-original="#000000"
+                                      class="active-path"
+                                      data-old_color="#000000" fill="#61951a" />
+                                      <rect x="256" y="128" width="85.333"
+                                        height="85.333" data-original="#000000"
+                                        class="active-path"
+                                        data-old_color="#000000" fill="#61951a"
+                                        />
+                                        <rect x="256" y="256" width="85.333"
+                                          height="85.333"
+                                          data-original="#000000"
+                                          class="active-path"
+                                          data-old_color="#000000"
+                                          fill="#61951a" />
+                                        </g>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                    </figure>
+                    <span>Grid Column</span>
+                </a>
+            </li>
+              <li>
+                <a href="grid_gridAdd.html">
+                  <figure>
+                  <?xml version="1.0"?>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -21 512 512" width="16px" class="">
+                    <g>
+                      <path
+                        d="m453.332031 469.332031h-394.664062c-32.363281 0-58.667969-26.300781-58.667969-58.664062v-352c0-32.363281 26.304688-58.667969 58.667969-58.667969h394.664062c32.363281 0 58.667969 26.304688 58.667969 58.667969v352c0 32.363281-26.304688 58.664062-58.667969 58.664062zm-394.664062-437.332031c-14.699219 0-26.667969 11.96875-26.667969 26.667969v352c0 14.699219 11.96875 26.664062 26.667969 26.664062h394.664062c14.699219 0 26.667969-11.964843 26.667969-26.664062v-352c0-14.699219-11.96875-26.667969-26.667969-26.667969zm0 0"
+                        data-original="#000000" class="active-path" data-old_color="#000000" fill="#61951a" />
+                      <path
+                        d="m496 160h-480c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h480c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"
+                        data-original="#000000" class="active-path" data-old_color="#000000" fill="#61951a" />
+                      <path
+                        d="m496 266.667969h-480c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h480c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"
+                        data-original="#000000" class="active-path" data-old_color="#000000" fill="#61951a" />
+                      <path
+                        d="m496 373.332031h-480c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h480c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"
+                        data-original="#000000" class="active-path" data-old_color="#000000" fill="#61951a" />
+                      <path
+                        d="m133.332031 469.332031c-8.832031 0-16-7.167969-16-16v-309.332031c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v309.332031c0 8.832031-7.167969 16-16 16zm0 0"
+                        data-original="#000000" class="active-path" data-old_color="#000000" fill="#61951a" />
+                      <path
+                        d="m256 469.332031c-8.832031 0-16-7.167969-16-16v-309.332031c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v309.332031c0 8.832031-7.167969 16-16 16zm0 0"
+                        data-original="#000000" class="active-path" data-old_color="#000000" fill="#61951a" />
+                      <path
+                        d="m378.667969 469.332031c-8.832031 0-16-7.167969-16-16v-309.332031c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v309.332031c0 8.832031-7.167969 16-16 16zm0 0"
+                        data-original="#000000" class="active-path" data-old_color="#000000" fill="#61951a" />
+                    </g>
+                  </svg>
+                  </figure>
+                  <span>Grid </span>
+                </a>
+              </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <svg x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16 16" style="transform:
+                                  rotate(90deg);">
+                                  <g transform="translate(0, 0)">
+                                    <polygon
+                                      fill="none"
+                                      stroke="#61951a"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-miterlimit="10"
+                                      points="12.5,5.5 8,0.5 3.5,5.5 6.5,5.5
+                                      6.5,11.5 9.5,11.5 9.5,5.5"
+                                      data-color="color-2"></polygon>
+                                    <path
+                                      fill="none"
+                                      stroke="#61951a"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M15.5,10.5v4c0,0.552-0.448,1-1,1h-13
+                                      c-0.552,0-1-0.448-1-1v-4"></path>
+                                  </g>
+                                </svg>
+                    </figure>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- Navigation Section End -->
+
+    <!-- Main Section start -->
+    <section class="main-section">
+        <!-- Breadcrumb Section Start -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="gridlist.html">Grid </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    Add Grid
+                </li>
+            </ol>
+        </nav>
+        <!-- Breadcrumb Section End -->
+        <h1 class="heading m-b-25">New Grid Column</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Form Section start -->
+                <div class="box-card">
+                    <div class="row">
+
+                        <div class="col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label>Coloum Heading<span
+                                        style="color:red">*</span></label>
+                                <input type="text" class="form-control" placeholder="Test Name" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="form-group">
+                                <label>Type<span style="color:red">*</span></label>
+                                <select class="form-control">
+                                      <option value="String"> String</option>
+                                      <option value="Int"> Int</option>
+                                    </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-lg-2">
+                            <div class="form-group">
+                                <label> Width<span style="color:red">*</span></label>
+                                <input type="text" class="form-control" placeholder="In PX" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-2">
+                            <div class="form-group">
+                                <label> Alignment<span style="color:red">*</span></label>
+                                <select class="form-control">
+                                      <option value="center"> Center</option>
+                                      <option value="left"> Left</option>
+                                      <option value="right"> Right</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-2">
+                            <div class="checkbox-style-1">
+                                <div class="form-check mt-4 pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">
+                                        Can Search
+                                      </label>
+                                </div>
+                            </div>
+                        </div>`
+                        <!-- <div class="col-md-3 col-lg-2">
+                          <div class="checkbox-style-1">
+                            <div class="form-check  mt-4 pt-2">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Can Download
+                              </label>
+                            </div>
+                          </div>
+                        </div> -->
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-12 col-lg-5">
+                        <button type="button" class="btn btn-danger" onclick="myFunction()">
+                          Submit
+                        </button>
+                        <button type="button" class="btn btn-light
+                                                      m-l-50">
+                          Clear
+                        </button>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+               
+            <!-- Form Section End -->
+        </div>
+        </div>
+        <!-- selected  Question Deatils-->
+        <!-- seleted Question deatils end -->
+        <!-- pop up End -->
+        <div class="tab-style-1" id="">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active show" id="question-tab" data-toggle="pill" href="#question" role="tab" aria-controls="question" aria-selected="false"><span>Grid Coloum</span></a>
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade active show" id="question" role="tabpanel" aria-labelledby="question-tab">
+                    <!-- question Section start -->
+                    <div class="box-card">
+                        <div class="p-t-0" id="showlistDiv" style="display: block;">
+                            <!-- <div class="row align-items-center">
+                                <div class="col-md-10">
+                                    <h1 class="heading m-b-0">Grid Coloum</h1>
+                                </div>
+                                <div class="col-md-2 text-right">
+                                    <a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="link-click
+                          m-l-45">
+                                        <svg x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16
+                            16" xml:space="preserve">
+                            <g>
+                              <circle fill="none" stroke="#69951a"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                cx="8" cy="8" r="7.5"></circle>
+                              <g>
+
+                                <line fill="none" stroke="#69951a"
+                                  stroke-linecap="round" stroke-linejoin="round"
+                                  stroke-miterlimit="10" x1="2.5" y1="8"
+                                  x2="13.5" y2="8"></line>
+
+                                <line fill="none" stroke="#69951a"
+                                  stroke-linecap="round" stroke-linejoin="round"
+                                  stroke-miterlimit="10" x1="8" y1="2.5" x2="8"
+                                  y2="13.5"></line>
+                              </g>
+                            </g>
+                          </svg> Add
+                                    </a>
+                                </div>
+
+                            </div> -->
+
+
+                            <!-- Table Section Start -->
+                            <div class="table-responsive">
+                                <table class="table table-style-1" id="myTable">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">COLOUM</th>
+                                            <th scope="col">TYPE</th>
+                                            <th scope="col" class="">WIDTH</th>
+                                            <th scope="col" class="">ALIGNMENT</th>
+                                              <th scope="col" class="">CAN SEARCH</th>
+                                            
+                                             <th scope="col" class="">ACTION(s)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Heading 1</td>
+                                            <td>String</td>
+                                              <td>120px</td>
+                                              <td>Left</td>
+                                              <td> <div class="checkbox-style-1">
+                                                <div class="form-check">
+                                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                                  <label class="form-check-label" for="defaultCheck3" style="color: white;">
+                                                  .
+                                                  </label>
+                                                </div>
+                                              </div></td>
+                                            <td>
+                                                <!-- <a href="#" data-toggle="modal" data-target="#selectedQuestioView" class="link-primary" data-placement="bottom" title="View">
+                                                    <svg x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16">
+                                  <g transform="translate(0, 0)">
+                                    <line
+                                      fill="none"
+                                      stroke="#61951a"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-miterlimit="10"
+                                      x1="4.5"
+                                      y1="11.5"
+                                      x2="11.5"
+                                      y2="11.5"
+                                      data-color="color-2"></line>
+                                    <line
+                                      fill="none"
+                                      stroke="#61951a"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-miterlimit="10"
+                                      x1="4.5"
+                                      y1="8.5"
+                                      x2="11.5"
+                                      y2="8.5"
+                                      data-color="color-2"></line>
+                                    <line
+                                      fill="none"
+                                      stroke="#61951a"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-miterlimit="10"
+                                      x1="4.5"
+                                      y1="5.5"
+                                      x2="6.5"
+                                      y2="5.5"
+                                      data-color="color-2"></line>
+                                    <polygon
+                                      fill="none"
+                                      stroke="#61951a"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-miterlimit="10"
+                                      points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5
+                                      14.5,5.5"></polygon>
+                                    <polyline
+                                      fill="none"
+                                      stroke="#61951a"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-miterlimit="10"
+                                      points="9.5,0.5 9.5,5.5 14.5,5.5"></polyline>
+                                  </g>
+                                </svg>
+                                                </a> -->
+                                                <a href="#" class="link-delete m-l-45" data-toggle="tooltip" data-placement="bottom" title="Delete">
+                                                    <svg x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16">
+                                  <g transform="translate(0, 0)">
+                                    <path
+                                      fill="none"
+                                      stroke="#61951a"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-miterlimit="10"
+                                      d="M2.5,6.5v7
+                                      c0,1.105,0.895,2,2,2h8c1.105,0,2-0.895,2-2v-7"></path>
+                                    <line
+                                      data-color="color-2"
+                                      fill="none"
+                                      stroke="#61951a"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-miterlimit="10"
+                                      x1="1.5"
+                                      y1="3.5"
+                                      x2="15.5"
+                                      y2="3.5"></line>
+                                    <polyline
+                                      data-color="color-2"
+                                      fill="none"
+                                      stroke="#61951a"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-miterlimit="10"
+                                      points="6.5,3.5 6.5,0.5 10.5,0.5
+                                      10.5,3.5"></polyline>
+                                    <line
+                                      fill="none"
+                                      stroke="#61951a"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-miterlimit="10"
+                                      x1="8.5"
+                                      y1="7.5"
+                                      x2="8.5"
+                                      y2="12.5"></line>
+                                    <line
+                                      fill="none"
+                                      stroke="#61951a"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-miterlimit="10"
+                                      x1="11.5"
+                                      y1="7.5"
+                                      x2="11.5"
+                                      y2="12.5"></line>
+                                    <line
+                                      fill="none"
+                                      stroke="#61951a"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-miterlimit="10"
+                                      x1="5.5"
+                                      y1="7.5"
+                                      x2="5.5"
+                                      y2="12.5"></line>
+                                  </g>
+                                </svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                          <tr>
+                                            <td>Heading 1</td>
+                                            <td>String</td>
+                                            <td>120px</td>
+                                            <td>Left</td>
+                                              <td>
+                                                <div class="checkbox-style-1">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                                    <label class="form-check-label" for="defaultCheck4" style="color: white;">
+                                                      .
+                                                    </label>
+                                                  </div>
+                                                </div>
+                                              </td>
+                                           
+                                            <td>
+                                              <!-- <a href="#" data-toggle="modal" data-target="#selectedQuestioView" class="link-primary" data-placement="bottom"
+                                                title="View">
+                                                <svg x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16">
+                                                  <g transform="translate(0, 0)">
+                                                    <line fill="none" stroke="#61951a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                                      x1="4.5" y1="11.5" x2="11.5" y2="11.5" data-color="color-2"></line>
+                                                    <line fill="none" stroke="#61951a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                                      x1="4.5" y1="8.5" x2="11.5" y2="8.5" data-color="color-2"></line>
+                                                    <line fill="none" stroke="#61951a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                                      x1="4.5" y1="5.5" x2="6.5" y2="5.5" data-color="color-2"></line>
+                                                    <polygon fill="none" stroke="#61951a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                                      points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5
+                                                                                14.5,5.5"></polygon>
+                                                    <polyline fill="none" stroke="#61951a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                                      points="9.5,0.5 9.5,5.5 14.5,5.5"></polyline>
+                                                  </g>
+                                                </svg>
+                                              </a> -->
+                                              <a href="#" class="link-delete m-l-45" data-toggle="tooltip" data-placement="bottom" title="Delete">
+                                                <svg x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16">
+                                                  <g transform="translate(0, 0)">
+                                                    <path fill="none" stroke="#61951a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.5,6.5v7
+                                                                                c0,1.105,0.895,2,2,2h8c1.105,0,2-0.895,2-2v-7"></path>
+                                                    <line data-color="color-2" fill="none" stroke="#61951a" stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-miterlimit="10" x1="1.5" y1="3.5" x2="15.5" y2="3.5"></line>
+                                                    <polyline data-color="color-2" fill="none" stroke="#61951a" stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-miterlimit="10" points="6.5,3.5 6.5,0.5 10.5,0.5
+                                                                                10.5,3.5"></polyline>
+                                                    <line fill="none" stroke="#61951a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                                      x1="8.5" y1="7.5" x2="8.5" y2="12.5"></line>
+                                                    <line fill="none" stroke="#61951a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                                      x1="11.5" y1="7.5" x2="11.5" y2="12.5"></line>
+                                                    <line fill="none" stroke="#61951a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                                      x1="5.5" y1="7.5" x2="5.5" y2="12.5"></line>
+                                                  </g>
+                                                </svg>
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Table Section End -->
+
+                            <!-- Pagination Start -->
+
+
+                            <!-- Pagination End -->
+                        </div>
+                    </div>
+                    <!-- Payment Section End -->
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Main Section End -->
+
+    <!-- Notifications Section start -->
+
+    <section class="notifications-section">
+        <div class="notifications-heading">
+            Notifications
+
+            <a href="javascript:void(0)" class="float-right
+              notifications-close">
+                <img src="../../images/close-icon.png" />
+            </a>
+        </div>
+        <ul class="list-unstyled" style="max-height: 550px; overflow: auto
+            !important">
+            <li>
+                <a href="#">
+                Welcome to Ayana Renewable Power
+                <small>18-04-2019 12:00 </small>
+              </a>
+            </li>
+            <li>
+                <a href="#">
+                Welcome to Ayana Renewable Power
+                <small>18-04-2019 12:00 </small>
+              </a>
+            </li>
+            <li>
+                <a href="#">
+                Welcome to Ayana Renewable Power
+                <small>18-04-2019 12:00 </small>
+              </a>
+            </li>
+            <li>
+                <a href="#">
+                Welcome to Ayana Renewable Power
+                <small>18-04-2019 12:00 </small>
+              </a>
+            </li>
+            <li>
+                <a href="#">
+                Welcome to Ayana Renewable Power
+                <small>18-04-2019 12:00 </small>
+              </a>
+            </li>
+            <li>
+                <a href="#">
+                Welcome to Ayana Renewable Power
+                <small>18-04-2019 12:00 </small>
+              </a>
+            </li>
+            <li>
+                <a href="#">
+                Welcome to Ayana Renewable Power
+                <small>18-04-2019 12:00 </small>
+              </a>
+            </li>
+            <li>
+                <a href="#">
+                Welcome to Ayana Renewable Power
+                <small>18-04-2019 12:00 </small>
+              </a>
+            </li>
+            <li>
+                <a href="#">
+                Welcome to Ayana Renewable Power
+                <small>18-04-2019 12:00 </small>
+              </a>
+            </li>
+            <li>
+                <a href="#">
+                Welcome to Ayana Renewable Power
+                <small>18-04-2019 12:00 </small>
+              </a>
+            </li>
+            <li style="text-align: center">
+                <a href="#" class="more" style="padding:7px 12px !important">More...</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Notifications Section End -->
+    <!-- Script files -->
+    <script src="../../js/jquery-3.3.1.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script> -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+
+    <script>
+        function myFunction() {
+            location.replace("Testdetails.html");
+        }
+    </script>
+    <script>
+        $(".menu-icon").click(function() {
+            $(".nav-section").toggleClass("expand");
+            $(".main-section").toggleClass("expand");
+        });
+
+        $(".notifications, .notifications-close").click(function() {
+            $(".notifications-section").toggleClass("expand");
+        });
+
+        $(document).ready(function() {
+            var date_input = $(".date"); //our date input has the name "date"
+            var container =
+                $(".bootstrap-iso form").length > 0 ?
+                $(".bootstrap-iso form").parent() :
+                "body";
+            date_input.datepicker({
+                use24hours: true,
+                format: "dd/mm/yyyy",
+                container: container,
+                todayHighlight: true,
+                autoclose: true
+            });
+        });
+    </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"/>
+      <script type="text/javascript">
+        $(function () {
+            $('.date').datetimepicker();
+        });
+    </script> -->
+    <script>
+        function viewQuestionDeatils() {
+            document.getElementById('question_list_popup').style.display = "none";
+            document.getElementById('question_details').style.display = "block";
+        }
+
+        function closeQuestionDeatils() {
+            document.getElementById('question_list_popup').style.display = "block";
+            document.getElementById('question_details').style.display = "none";
+        }
+
+        function showDiv() {
+            document.getElementById("addDiv").style.display = "block";
+            document.getElementById("showlistDiv").style.display = "none";
+        }
+
+        function closeDiv() {
+            document.getElementById("addDiv").style.display = "none";
+            document.getElementById("showlistDiv").style.display = "block";
+        }
+
+        function showDiv1() {
+            document.getElementById("addDiv1").style.display = "block";
+            document.getElementById("showlistDiv1").style.display = "none";
+        }
+
+        function showQuestionList() {
+            document.getElementById("question_list").style.display = "block";
+            // document.getElementById('exampleModalCenter').style.display="none"
+        }
+
+        function closeDiv1() {
+            document.getElementById("addDiv1").style.display = "none";
+            document.getElementById("showlistDiv1").style.display = "block";
+        }
+        $(".filter-btn").click(function() {
+            $(".filter-popup").slideToggle();
+        });
+    </script>
+    <script>
+        var fixHelperModified = function(e, tr) {
+                var $originals = tr.children();
+                var $helper = tr.clone();
+                $helper.children().each(function(index) {
+                    $(this).width($originals.eq(index).width())
+                });
+                return $helper;
+            },
+            updateIndex = function(e, ui) {
+                $('td.index', ui.item.parent()).each(function(i) {
+                    $(this).html(i + 1);
+                });
+                $('input[type=text]', ui.item.parent()).each(function(i) {
+                    $(this).val(i + 1);
+                });
+            };
+        $("#myTable tbody").sortable({
+            helper: fixHelperModified,
+            stop: updateIndex
+        }).disableSelection();
+
+        $("tbody").sortable({
+            distance: 5,
+            delay: 100,
+            opacity: 0.6,
+            cursor: 'move',
+            update: function() {}
+        });
+    </script>
+</body>
+
+</html>
