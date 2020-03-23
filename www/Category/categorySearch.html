@@ -25,6 +25,45 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <style type="text/css">
+      .table-style-1 > tbody > tr > td:nth-child(1) {
+        width: 150px;
+      }
+      .table-style-1 > tbody > tr > td:nth-child(2) {
+        width: 250px;
+      }
+      #page {
+        color: black;
+      }
+      #page:hover {
+        color: #0087d5;
+      }
+      .more:hover {
+        background-color: white !important;
+      }
+
+      /* width */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #69951a;
+        border-radius: 10px;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #69951a;
+      }
+    </style>
   </head>
 
   <body>
@@ -215,7 +254,7 @@
           </a>
         </li>
         <li>
-          <a href="categoryList.html">
+          <a href="userCategoryView.html">
             <figure>
               <img src="../images/category.svg" />
             </figure>
@@ -283,285 +322,86 @@
             <a href="#">Home</a>
           </li>
           <li class="breadcrumb-item active">
-            Category List
+            Attachment List
           </li>
         </ol>
       </nav>
       <!-- Breadcrumb Section End -->
       <div class="row align-items-center no-gutters">
         <div class="col-md-8">
-          <h1 class="heading m-b-0">Category List</h1>
+          <h1 class="heading m-b-0">Attachment List</h1>
         </div>
-        <div class="col-md-4 text-right">
-          <!-- <a href="addCategory.html" class="btn btn-danger">Add</a
-          > -->
-          <button class="btn btn-primary filter-btn  m-l-10">Filter</button>
-
-          <div class="filter-popup">
-            <form>
-              <div class="form-group">
-                <label>Category Id</label><br />
-                <input
-                  type="textbox"
-                  class="form-control "
-                  placeholder="Enter Category Id"
-                />
-              </div>
-              <div class="form-group">
-                <label>Category Name</label><br />
-                <input
-                  type="textbox"
-                  class="form-control "
-                  placeholder="Enter Category Name"
-                />
-              </div>
-              <div class="form-group">
-                <label>Status</label>
-                <select class="form-control select-style-1">
-                  <option>Active</option>
-                  <option>In Active</option>
-                </select>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6 text-center">
-                  <button type="button" class="btn btn-light btn-block">
-                    Clear
-                  </button>
-                </div>
-                <div class="col-md-6 text-center">
-                  <button type="button" class="btn btn-danger">Apply</button>
-                </div>
-              </div>
-            </form>
+        <div class="col-md-4 text-right"></div>
+      </div>
+      <div>
+        <div class="row mt-3">
+          <div class="col-md-3">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                value="Wind"
+                placeholder="Enter tags to search"
+              />
+            </div>
+          </div>
+          <div class="col-md-2">
+            <button type="button" class="btn btn-danger mt-1">
+              Go
+            </button>
+          </div>
+        </div>
+        <div>
+          <div class="form-group " style="padding: 0px;margin: 0px;">
+            <span
+              ><label style="margin-right:5px;">Search result for tag: </label
+              >Wind</span
+            >
           </div>
         </div>
         <div class="table-responsive">
-          <table class="table table-style-1 m-t-35">
+          <table class="table table-style-1">
             <thead>
               <tr>
-                <th scope="col">CATEGORY ID</th>
+                <th scope="col" width="400px">CATEGORY DETAILS</th>
+                <th scope="col">TYPE</th>
                 <th scope="col">NAME</th>
-                <!-- <th scope="col">DESCRIPTION</!-->
 
-                <th scope="col">STATUS</th>
-                <th scope="col"></th>
+                <th scope="col">ACTION</th>
               </tr>
             </thead>
             <tbody>
-              <tr onclick="window.location='categoryView.html';">
-                <td>1</td>
-                <td>Regulatory Info / Policies</td>
-
-                <td>Active</td>
+              <!-- <tr>
+                <td>CEA->Solar</td>
+                <td>Document</td>
+                <td>Solar Policy</td>
                 <td>
-                  <a href="categoryView.html" class="link-primary">
-                    <svg
-                      x="0px"
-                      y="0px"
-                      width="16px"
-                      height="16px"
-                      viewBox="0 0 16 16"
-                    >
-                      <g transform="translate(0, 0)">
-                        <line
-                          fill="none"
-                          stroke="#69951a"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-miterlimit="10"
-                          x1="4.5"
-                          y1="11.5"
-                          x2="11.5"
-                          y2="11.5"
-                          data-color="color-2"
-                        ></line>
-                        <line
-                          fill="none"
-                          stroke="#69951a"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-miterlimit="10"
-                          x1="4.5"
-                          y1="8.5"
-                          x2="11.5"
-                          y2="8.5"
-                          data-color="color-2"
-                        ></line>
-                        <line
-                          fill="none"
-                          stroke="#69951a"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-miterlimit="10"
-                          x1="4.5"
-                          y1="5.5"
-                          x2="6.5"
-                          y2="5.5"
-                          data-color="color-2"
-                        ></line>
-                        <polygon
-                          fill="none"
-                          stroke="#69951a"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-miterlimit="10"
-                          points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 "
-                        ></polygon>
-                        <polyline
-                          fill="none"
-                          stroke="#69951a"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-miterlimit="10"
-                          points="9.5,0.5 9.5,5.5 14.5,5.5 "
-                        ></polyline>
-                      </g>
-                    </svg>
+                  <a class="link-primary"
+                    ><img src="../images/download.svg" />
+                  </a>
+                </td>
+            </tr>!-->
+
+              <tr>
+                <td>CEA->Wind</td>
+                <td>Document</td>
+                <td>Wind Policy</td>
+                <td>
+                  <a href="#" class="link-primary"
+                    ><img src="../images/download.svg" />
                   </a>
                 </td>
               </tr>
-              <tr onclick="window.location='categoryView.html';">
-                <td>2</td>
-                <td>Solar Projects DB</td>
-
-                <td>Pending For Activation</td>
+              <tr>
+                <td>Wind Projects DB->Wind</td>
+                <td>Grid</td>
+                <td>Wind Grid</td>
                 <td>
-                  <a href="categoryView.html" class="link-primary">
-                    <svg
-                      x="0px"
-                      y="0px"
-                      width="16px"
-                      height="16px"
-                      viewBox="0 0 16 16"
-                    >
-                      <g transform="translate(0, 0)">
-                        <line
-                          fill="none"
-                          stroke="#69951a"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-miterlimit="10"
-                          x1="4.5"
-                          y1="11.5"
-                          x2="11.5"
-                          y2="11.5"
-                          data-color="color-2"
-                        ></line>
-                        <line
-                          fill="none"
-                          stroke="#69951a"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-miterlimit="10"
-                          x1="4.5"
-                          y1="8.5"
-                          x2="11.5"
-                          y2="8.5"
-                          data-color="color-2"
-                        ></line>
-                        <line
-                          fill="none"
-                          stroke="#69951a"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-miterlimit="10"
-                          x1="4.5"
-                          y1="5.5"
-                          x2="6.5"
-                          y2="5.5"
-                          data-color="color-2"
-                        ></line>
-                        <polygon
-                          fill="none"
-                          stroke="#69951a"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-miterlimit="10"
-                          points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 "
-                        ></polygon>
-                        <polyline
-                          fill="none"
-                          stroke="#69951a"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-miterlimit="10"
-                          points="9.5,0.5 9.5,5.5 14.5,5.5 "
-                        ></polyline>
-                      </g>
-                    </svg>
-                  </a>
-                </td>
-              </tr>
-              <tr onclick="window.location='categoryView.html';">
-                <td>3</td>
-                <td>Wind Projects</td>
-
-                <td>Active</td>
-                <td>
-                  <a href="categoryView.html" class="link-primary">
-                    <svg
-                      x="0px"
-                      y="0px"
-                      width="16px"
-                      height="16px"
-                      viewBox="0 0 16 16"
-                    >
-                      <g transform="translate(0, 0)">
-                        <line
-                          fill="none"
-                          stroke="#69951a"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-miterlimit="10"
-                          x1="4.5"
-                          y1="11.5"
-                          x2="11.5"
-                          y2="11.5"
-                          data-color="color-2"
-                        ></line>
-                        <line
-                          fill="none"
-                          stroke="#69951a"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-miterlimit="10"
-                          x1="4.5"
-                          y1="8.5"
-                          x2="11.5"
-                          y2="8.5"
-                          data-color="color-2"
-                        ></line>
-                        <line
-                          fill="none"
-                          stroke="#69951a"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-miterlimit="10"
-                          x1="4.5"
-                          y1="5.5"
-                          x2="6.5"
-                          y2="5.5"
-                          data-color="color-2"
-                        ></line>
-                        <polygon
-                          fill="none"
-                          stroke="#69951a"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-miterlimit="10"
-                          points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 "
-                        ></polygon>
-                        <polyline
-                          fill="none"
-                          stroke="#69951a"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-miterlimit="10"
-                          points="9.5,0.5 9.5,5.5 14.5,5.5 "
-                        ></polyline>
-                      </g>
-                    </svg>
+                  <a
+                    href="../GridData/gird/grid_gridedit.html"
+                    target="_blank"
+                    class="link-primary"
+                    ><img src="../images/grid.svg" />
                   </a>
                 </td>
               </tr>
@@ -569,6 +409,21 @@
           </table>
         </div>
       </div>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center pagination-style-1">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous" id="page"
+              >&laquo; Previous
+            </a>
+          </li>
+
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next" id="page">
+              Next &raquo;
+            </a>
+          </li>
+        </ul>
+      </nav>
     </section>
 
     <script src="../js/jquery-3.3.1.min.js"></script>

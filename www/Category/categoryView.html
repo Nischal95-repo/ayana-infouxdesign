@@ -298,6 +298,24 @@
       <div class="row">
         <div class="col-md-4">
           <div class="box-card" style="overflow-y: auto;overflow-x: auto; min-height: 100%;">
+            <div class="row">
+
+            <div class="col-md-8">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Enter text to search"/>
+              </div>
+            </div>
+            <div class="col-md-4">
+
+              <button
+              type="button"
+              class="btn btn-danger mt-1"
+              
+            >
+              Go
+            </button>
+            </div>
+            </div>
             <ul id="myUL" class="tree-list">
               <li>
                 <span class="caret" onclick="showSubCatList()"
@@ -351,6 +369,9 @@
                 <div class="col-md-8">
                   <h1 class="heading m-b-0">Sub Category List</h1>
                 </div>
+                <div class="col-md-4 text-right">
+                  <button class="btn btn-danger" onclick="redirectTo()">Search</button>
+                </div>
                 <div class="table-responsive">
                   <table class="table table-style-1 m-t-35">
                     <thead>
@@ -393,6 +414,9 @@
                 <div class="col-md-8">
                   <h1 class="heading m-b-0">Sub Category List</h1>
                 </div>
+                <div class="col-md-4 text-right">
+                  <button class="btn btn-danger" onclick="redirectTo()">Search</button>
+                </div>
                 <div class="table-responsive">
                   <table class="table table-style-1 m-t-35">
                     <thead>
@@ -422,6 +446,9 @@
                 <div class="row align-items-center no-gutters">
                     <div class="col-md-8">
                       <h1 class="heading m-b-0">Sub Category List</h1>
+                    </div>
+                    <div class="col-md-4 text-right">
+                      <button class="btn btn-danger" onclick="redirectTo()">Search</button>
                     </div>
                     <div class="table-responsive">
                       <table class="table table-style-1 m-t-35">
@@ -486,9 +513,14 @@
             </div>
 
             <div id="wind" style="display: none;">
+              <div class="row">
               <div class="col-md-8">
                 <h1 class="heading m-b-0">Document List</h1>
               </div>
+              <div class="col-md-4 text-right">
+                <button class="btn btn-danger" onclick="redirectTo()">Search</button>
+              </div>
+            </div>
               <div class="table-responsive">
                 <table class="table table-style-1 m-t-35">
                   <thead>
@@ -524,9 +556,15 @@
               </div>
             </div>
             <div id="windGrid" style="display: none;">
+              <div class="row">
               <div class="col-md-8">
                 <h1 class="heading m-b-0">Grid List</h1>
               </div>
+            
+              <div class="col-md-4 text-right">
+                <button class="btn btn-danger" onclick="redirectTo()">Search</button>
+              </div>
+            </div>
               <div class="table-responsive">
                 <table class="table table-style-1 m-t-35">
                   <thead>
@@ -543,7 +581,7 @@
                       <td>Wind Policy -1</td>
                       <td>Grid</td>
                       <td>Wind Policy Information</td>
-                      <td><a href="../Masters/gird/grid_gridedit.html" target="blank"><i class="fas fa-th"></i></a></td>
+                      <td><a href="../GridData/gird/grid_gridedit.html" target="blank"><i class="fas fa-th"></i></a></td>
                     </tr>
 
                     <!-- <tr>
@@ -648,6 +686,9 @@
         document.getElementById("subCatList").style.display = "none";
         document.getElementById("subCatList1").style.display = "none";
         document.getElementById("windGrid").style.display = "block";
+      }
+      function redirectTo(){
+        window.location.href="../Category/categorySearch.html"
       }
     </script>
   </body>
