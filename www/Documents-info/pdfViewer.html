@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Ayana Renewable Power</title>
+    <link
+    rel="shortcut icon"
+    type="image/x-icon"
+    href="../images/favicon.ico"
+  />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  </head>
+  <body>
+      <!-- Header section start -->
+    <header>
+            <div class="row align-items-center no-gutters">
+              <div class="col-6">
+                <a href="javascript:void(0)" class="menu-icon">
+                  <svg width="18px" height="18px" viewBox="0 0 177 130">
+                    <g
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g id="svg" fill-rule="nonzero" fill="#000000">
+                        <path
+                          d="M0,0 L0,10 L176.724,10 L176.724,0 L0,0 Z M0,69.92 L176.724,69.92 L176.724,59.92 L0,59.92 L0,69.92 Z M0,129.84 L107.724,129.84 L107.724,119.84 L0,119.84 L0,129.84 Z"
+                          id="Shape"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+                <a href="#" class="brand-name">
+                  <img src="../images/logo.jpg" />
+                </a>
+              </div>
+              <div class="col-6 text-right">
+                <ul class="list-inline info-list">
+                  <li class="list-inline-item username">
+                    <a href="#">Welcome !</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <svg
+                        x="0px"
+                        y="0px"
+                        width="22px"
+                        height="22px"
+                        viewBox="0 0 16 16"
+                      >
+                        <g transform="translate(0, 0)">
+                          <path
+                            data-color="color-2"
+                            d="M14.5,12.976a1,1,0,0,0-.426-.82A10.367,10.367,0,0,0,8,10.5a10.367,10.367,0,0,0-6.074,1.656,1,1,0,0,0-.426.82V15.5h13Z"
+                            fill="none"
+                            stroke="#69951a"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <circle
+                            cx="8"
+                            cy="4"
+                            r="3.5"
+                            fill="none"
+                            stroke="#69951a"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></circle>
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="list-inline-item notifications">
+                    <a href="#">
+                      <svg
+                        x="0px"
+                        y="0px"
+                        width="22px"
+                        height="22px"
+                        viewBox="0 0 16 16"
+                      >
+                        <g transform="translate(0, 0)">
+                          <path
+                            data-color="color-2"
+                            fill="none"
+                            stroke="#69951a"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-miterlimit="10"
+                            d=" M10,13.5c0,1.105-0.895,2-2,2s-2-0.895-2-2"
+                          ></path>
+                          <line
+                            fill="none"
+                            stroke="#69951a"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-miterlimit="10"
+                            x1="0.5"
+                            y1="11.5"
+                            x2="15.5"
+                            y2="11.5"
+                          ></line>
+                          <path
+                            fill="none"
+                            stroke="#69951a"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-miterlimit="10"
+                            d="M14.5,11.5H15 c-1.105,0-2.5-0.895-2.5-2V5c0-2.485-2.015-4.5-4.5-4.5h0C5.515,0.5,3.5,2.515,3.5,5v4.5c0,1.105-0.895,2-2,2"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </header>
+          <section class="nav-section" style="overflow-y: auto;overflow-x: hidden">
+            <ul class="list-unstyled">
+              <!-- <li><a href="#" class="active">
+                          <figure>
+                              <svg x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16 16">
+                                  <g transform="translate(0, 0)">
+                                      <rect x="0.5" y="0.5" fill="none" stroke="#69951a" stroke-linecap="round"
+                                          stroke-linejoin="round" stroke-miterlimit="10" width="6" height="6"></rect>
+                                      <rect data-color="color-2" x="9.5" y="0.5" fill="none" stroke="#69951a"
+                                          stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="6"
+                                          height="6"></rect>
+                                      <rect data-color="color-2" x="0.5" y="9.5" fill="none" stroke="#69951a"
+                                          stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="6"
+                                          height="6"></rect>
+                                      <rect x="9.5" y="9.5" fill="none" stroke="#69951a" stroke-linecap="round"
+                                          stroke-linejoin="round" stroke-miterlimit="10" width="6" height="6"></rect>
+                                  </g>
+                              </svg>
+                          </figure>
+      
+      
+      
+                          <span>Dashboard</span>
+                      </a></li> -->
+              <!-- <li><a href="#">
+                          <figure>
+                              <svg x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16 16">
+                                  <g transform="translate(0, 0)">
+                                      <rect x="1.5" y="2.5" width="3" height="3" rx="1.5" ry="1.5" fill="none"
+                                          stroke="#69951a" stroke-linecap="round" stroke-linejoin="round" data-cap="butt"
+                                          data-color="color-2"></rect>
+                                      <path d="M3.5,14.5h-2v-3H.5v-3a1,1,0,0,1,1-1h1" fill="none" stroke="#69951a"
+                                          stroke-linecap="round" stroke-linejoin="round" data-cap="butt" data-color="color-2">
+                                      </path>
+                                      <rect x="11.5" y="2.5" width="3" height="3" rx="1.5" ry="1.5"
+                                          transform="translate(26 8) rotate(-180)" fill="none" stroke="#69951a"
+                                          stroke-linecap="round" stroke-linejoin="round" data-cap="butt" data-color="color-2">
+                                      </rect>
+                                      <path d="M12.5,14.5h2v-3h1v-3a1,1,0,0,0-1-1h-1" fill="none" stroke="#69951a"
+                                          stroke-linecap="round" stroke-linejoin="round" data-cap="butt" data-color="color-2">
+                                      </path>
+                                      <rect x="6" y="0.5" width="4" height="4" rx="2" ry="2" fill="none" stroke="#69951a"
+                                          stroke-linecap="round" stroke-linejoin="round" data-cap="butt"></rect>
+                                      <path d="M10.5,15.5h-5v-4h-1v-3a2,2,0,0,1,2-2h3a2,2,0,0,1,2,2v3h-1Z" fill="none"
+                                          stroke="#69951a" stroke-linecap="round" stroke-linejoin="round" data-cap="butt">
+                                      </path>
+                                  </g>
+                              </svg>
+                          </figure> <span>Customers</span>
+                      </a></li> -->
+              <li>
+                  <a href="../Users/usersview.html">
+                  <figure>
+                    <svg
+                      x="0px"
+                      y="0px"
+                      width="18px"
+                      height="18px"
+                      viewBox="0 0 16 16"
+                    >
+                      <g transform="translate(0, 0)">
+                        <path
+                          data-color="color-2"
+                          d="M14.5,12.976a1,1,0,0,0-.426-.82A10.367,10.367,0,0,0,8,10.5a10.367,10.367,0,0,0-6.074,1.656,1,1,0,0,0-.426.82V15.5h13Z"
+                          fill="none"
+                          stroke="#69951a"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <circle
+                          cx="8"
+                          cy="4"
+                          r="3.5"
+                          fill="none"
+                          stroke="#69951a"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></circle>
+                      </g>
+                    </svg>
+                  </figure>
+                  <span>User Mgmt.</span>
+                </a>
+              </li>
+              <!-- <li><a href="#">
+                          <figure>
+                              <svg x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16 16">
+                                  <g transform="translate(0, 0)">
+                                      <polyline fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                                          stroke-miterlimit="10" points=" 4.982,8.068 0.5,6 15,1 10,15.5 7,9 10,6 "
+                                          data-cap="butt"></polyline>
+                                  </g>
+                              </svg>
+                          </figure> <span>Locations</span>
+                      </a></li> -->
+              <li>
+                <a href="documentsList.html">
+                  <figure>
+                    <svg
+                      x="0px"
+                      y="0px"
+                      width="18px"
+                      height="18px"
+                      viewBox="0 0 16 16"
+                    >
+                      <g transform="translate(0, 0)">
+                        <line
+                          fill="none"
+                          stroke="#69951a"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-miterlimit="10"
+                          x1="4.5"
+                          y1="11.5"
+                          x2="11.5"
+                          y2="11.5"
+                          data-color="color-2"
+                        ></line>
+                        <line
+                          fill="none"
+                          stroke="#69951a"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-miterlimit="10"
+                          x1="4.5"
+                          y1="8.5"
+                          x2="11.5"
+                          y2="8.5"
+                          data-color="color-2"
+                        ></line>
+                        <line
+                          fill="none"
+                          stroke="#69951a"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-miterlimit="10"
+                          x1="4.5"
+                          y1="5.5"
+                          x2="6.5"
+                          y2="5.5"
+                          data-color="color-2"
+                        ></line>
+                        <polygon
+                          fill="none"
+                          stroke="#69951a"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-miterlimit="10"
+                          points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 "
+                        ></polygon>
+                        <polyline
+                          fill="none"
+                          stroke="#69951a"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-miterlimit="10"
+                          points="9.5,0.5 9.5,5.5 14.5,5.5 "
+                        ></polyline>
+                      </g>
+                    </svg>
+                  </figure>
+                  <span>Task Upload</span>
+                </a>
+              </li>
+              <li><a href="contributer.html">
+                    <figure>
+                        <svg x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16 16">
+                            <g transform="translate(0, 0)">
+                                <line fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-miterlimit="10" x1="4.5" y1="11.5" x2="11.5" y2="11.5" data-color="color-2">
+                                </line>
+                                <line fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-miterlimit="10" x1="4.5" y1="8.5" x2="11.5" y2="8.5" data-color="color-2">
+                                </line>
+                                <line fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-miterlimit="10" x1="4.5" y1="5.5" x2="6.5" y2="5.5" data-color="color-2">
+                                </line>
+                                <polygon fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-miterlimit="10" points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 ">
+                                </polygon>
+                                <polyline fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-miterlimit="10" points="9.5,0.5 9.5,5.5 14.5,5.5 "></polyline>
+                            </g>
+                        </svg>
+                    </figure> <span>Task Review</span>
+                </a></li>
+                <li>
+                    <a href="../Info/infoList.html">
+                      <figure>
+                        <svg
+                          x="0px"
+                          y="0px"
+                          width="18px"
+                          height="18px"
+                          viewBox="0 0 16 16"
+                        >
+                          <g transform="translate(0, 0)">
+                            <line
+                              fill="none"
+                              stroke="#69951a"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-miterlimit="10"
+                              x1="4.5"
+                              y1="11.5"
+                              x2="11.5"
+                              y2="11.5"
+                              data-color="color-2"
+                            ></line>
+                            <line
+                              fill="none"
+                              stroke="#69951a"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-miterlimit="10"
+                              x1="4.5"
+                              y1="8.5"
+                              x2="11.5"
+                              y2="8.5"
+                              data-color="color-2"
+                            ></line>
+                            <line
+                              fill="none"
+                              stroke="#69951a"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-miterlimit="10"
+                              x1="4.5"
+                              y1="5.5"
+                              x2="6.5"
+                              y2="5.5"
+                              data-color="color-2"
+                            ></line>
+                            <polygon
+                              fill="none"
+                              stroke="#69951a"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-miterlimit="10"
+                              points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 "
+                            ></polygon>
+                            <polyline
+                              fill="none"
+                              stroke="#69951a"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-miterlimit="10"
+                              points="9.5,0.5 9.5,5.5 14.5,5.5 "
+                            ></polyline>
+                          </g>
+                        </svg>
+                      </figure>
+                      <span>Info Upload</span>
+                    </a>
+                  </li>
+                  <li><a href="../Info/infoView.html">
+                      <figure>
+                          <svg x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16 16">
+                              <g transform="translate(0, 0)">
+                                  <line fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                                      stroke-miterlimit="10" x1="4.5" y1="11.5" x2="11.5" y2="11.5" data-color="color-2">
+                                  </line>
+                                  <line fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                                      stroke-miterlimit="10" x1="4.5" y1="8.5" x2="11.5" y2="8.5" data-color="color-2">
+                                  </line>
+                                  <line fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                                      stroke-miterlimit="10" x1="4.5" y1="5.5" x2="6.5" y2="5.5" data-color="color-2">
+                                  </line>
+                                  <polygon fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                                      stroke-miterlimit="10" points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 ">
+                                  </polygon>
+                                  <polyline fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                                      stroke-miterlimit="10" points="9.5,0.5 9.5,5.5 14.5,5.5 "></polyline>
+                              </g>
+                          </svg>
+                      </figure> <span>Info View</span>
+                  </a></li>
+                <li>
+                  <a href="../QuestionTest/questionList.html">
+                    <figure>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="16px" height="16px" class=""><g><g>
+                        <g>
+                          <g>
+                            <circle cx="256" cy="378.5" r="25" data-original="#000000" class="active-path" data-old_color="#000000" fill="#69951A"/>
+                            <path d="M256,0C114.516,0,0,114.497,0,256c0,141.484,114.497,256,256,256c141.484,0,256-114.497,256-256     C512,114.516,397.503,0,256,0z M256,472c-119.377,0-216-96.607-216-216c0-119.377,96.607-216,216-216     c119.377,0,216,96.607,216,216C472,375.377,375.393,472,256,472z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#69951A"/>
+                            <path d="M256,128.5c-44.112,0-80,35.888-80,80c0,11.046,8.954,20,20,20s20-8.954,20-20c0-22.056,17.944-40,40-40     c22.056,0,40,17.944,40,40c0,22.056-17.944,40-40,40c-11.046,0-20,8.954-20,20v50c0,11.046,8.954,20,20,20     c11.046,0,20-8.954,20-20v-32.531c34.466-8.903,60-40.26,60-77.469C336,164.388,300.112,128.5,256,128.5z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#69951A"/>
+                          </g>
+                        </g>
+                      </g></g> </svg>
+                      <!-- <img src="../images/info.png"> -->
+                      <!-- <svg id="Layer_3" width="18px" height="18px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xmlns="preserve"><g><path d="m32 2c-16.569 0-30 13.431-30 30s13.431 30 30 30 30-13.431 30-30-13.431-30-30-30zm0 56c-14.359 0-26-11.641-26-26s11.641-26 26-26 26 11.641 26 26-11.641 26-26 26z" fill="#f4b2b0"/><g fill="#b3404a"><path d="m32 1c-17.093 0-31 13.907-31 31s13.907 31 31 31 31-13.907 31-31-13.907-31-31-31zm0 60c-15.991 0-29-13.009-29-29s13.009-29 29-29 29 13.009 29 29-13.009 29-29 29z"/><path d="m32 5c-14.888 0-27 12.112-27 27s12.112 27 27 27 27-12.112 27-27-12.112-27-27-27zm0 52c-13.785 0-25-11.215-25-25s11.215-25 25-25 25 11.215 25 25-11.215 25-25 25z"/><path d="m32.533 9.011c-3.577-.146-6.964 1.141-9.539 3.614-2.576 2.475-3.994 5.804-3.994 9.375 0 .435.021.866.063 1.29.152 1.545 1.438 2.71 2.991 2.71.856 0 1.675-.364 2.247-1 .555-.616.824-1.438.738-2.253 0 0 0 0 0-.001-.042-.397-.05-.803-.024-1.208.223-3.487 3.133-6.355 6.625-6.529 2.322-.114 4.538.917 5.939 2.763 1.429 1.881 1.799 4.306 1.017 6.652-.796 2.388-3.028 4.163-5.764 4.53-2.185.293-3.832 2.171-3.832 4.366v8.68c0 .552.448 1 1 1h4c.552 0 1-.448 1-1l.031-7.355c5.884-1.405 10.076-6.823 9.967-12.883-.121-6.761-5.713-12.481-12.465-12.751zm2.032 23.688c-.921.221-1.565 1.023-1.565 1.949v6.352h-2v-7.68c0-1.198.902-2.224 2.178-2.395 3.407-.458 6.279-2.762 7.315-5.869.994-2.982.513-6.078-1.322-8.494-1.801-2.372-4.655-3.707-7.631-3.55-4.492.224-8.235 3.913-8.521 8.398-.033.517-.023 1.038.031 1.547.037.346-.131.59-.235.706-.193.214-.47.337-.76.337-.52 0-.95-.39-1.001-.908-.036-.359-.054-.723-.054-1.092 0-3.021 1.2-5.839 3.38-7.933 2.179-2.093 5.046-3.177 8.073-3.058 5.712.229 10.443 5.069 10.545 10.789.092 5.128-3.455 9.712-8.433 10.901z"/><path d="m34 46h-4c-.552 0-1 .448-1 1v6c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-6c0-.552-.448-1-1-1zm-1 6h-2v-4h2z"/></g></g></svg> -->
+                    </figure>
+                    <span>Question Mgmt.</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../QuestionTest/TestList.html">
+                    <figure>
+                      <img src="../images/test.svg">
+                    </figure>
+                    <span>Compl. Test</span>
+                  </a>
+                </li>
+                <li><a href="../Masters/masters.html">
+                  <figure>
+                      <img src="../images/master.svg"/>
+                  </figure> <span>Masters</span>
+              </a></li>
+              <li>
+                <a href="../employeeView/TestList.html">
+                  <figure>
+                    <?xml version="1.0"?>
+                    <svg xmlns="http://www.w3.org/2000/svg"  height="16px" viewBox="-32 0 512 512" width="16px" class=""><g><path d="m59.921875 471.371094c-11.015625 0-19.976563-8.957032-19.976563-19.972656v-351.53125c0-11.011719 8.960938-19.972657 19.976563-19.972657h32.953125v78.894531h199.734375v-78.894531h31.957031c11.015625 0 19.976563 8.960938 19.976563 19.972657v221.890624l39.945312-44.476562v-177.414062c0-33.039063-26.878906-59.921876-59.921875-59.921876h-75.324218c-8.242188-23.25-30.457032-39.945312-56.5-39.945312-26.039063 0-48.253907 16.695312-56.496094 39.945312h-76.324219c-33.042969 0-59.921875 26.882813-59.921875 59.921876v351.53125c0 33.042968 26.878906 59.921874 59.921875 59.921874h162.488281l-41.964844-39.949218zm112.847656-391.476563v-19.972656c0-11.015625 8.960938-19.976563 19.972657-19.976563 11.015624 0 19.976562 8.960938 19.976562 19.976563v19.972656h39.945312v38.949219h-119.839843v-38.949219zm131.824219 158.789063h-144.804688v-39.949219h144.804688zm-184.753906-39.949219v39.949219h-39.945313v-39.949219zm40.945312 119.84375v-39.949219h143.808594v39.949219zm-39.945312 0h-40.945313v-39.949219h40.945313zm-40.945313 39.945313h39.945313v39.945312h-39.945313zm367.390625-31.59375-166.222656 185.070312-108.082031-102.882812 27.542969-28.933594 78.296874 74.53125 138.746094-154.480469zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#69951A"/></g> </svg>
+                  </figure>
+                  <span>Employee Test </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <svg
+                      x="0px"
+                      y="0px"
+                      width="18px"
+                      height="18px"
+                      viewBox="0 0 16 16"
+                    >
+                      <g transform="translate(0, 0)">
+                        <circle
+                          data-color="color-2"
+                          fill="none"
+                          stroke="#69951a"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-miterlimit="10"
+                          cx="8"
+                          cy="8"
+                          r="2.5"
+                        ></circle>
+                        <path
+                          fill="none"
+                          stroke="#69951a"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-miterlimit="10"
+                          d="M15.5,9V7 l-2.177-0.363c-0.131-0.512-0.332-0.994-0.595-1.437l1.283-1.796L12.596,1.99L10.8,3.272c-0.443-0.263-0.925-0.464-1.437-0.595 L9,0.5H7L6.637,2.677C6.125,2.808,5.643,3.009,5.2,3.272L3.404,1.99L1.99,3.404L3.272,5.2C3.009,5.643,2.808,6.125,2.677,6.637 L0.5,7v2l2.177,0.363c0.131,0.512,0.332,0.994,0.595,1.437L1.99,12.596l1.414,1.414L5.2,12.728c0.443,0.263,0.925,0.464,1.437,0.595 L7,15.5h2l0.363-2.177c0.512-0.131,0.994-0.332,1.437-0.595l1.796,1.283l1.414-1.414L12.728,10.8 c0.263-0.443,0.464-0.925,0.595-1.437L15.5,9z"
+                        ></path>
+                      </g>
+                    </svg>
+                  </figure>
+                  <span>Settings</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <svg
+                      x="0px"
+                      y="0px"
+                      width="18px"
+                      height="18px"
+                      viewBox="0 0 16 16"
+                      style="transform: rotate(90deg);"
+                    >
+                      <g transform="translate(0, 0)">
+                        <polygon
+                          fill="none"
+                          stroke="#69951a"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-miterlimit="10"
+                          points="12.5,5.5 8,0.5 3.5,5.5 6.5,5.5 6.5,11.5 9.5,11.5 9.5,5.5 "
+                          data-color="color-2"
+                        ></polygon>
+                        <path
+                          fill="none"
+                          stroke="#69951a"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.5,10.5v4c0,0.552-0.448,1-1,1h-13 c-0.552,0-1-0.448-1-1v-4"
+                        ></path>
+                      </g>
+                    </svg>
+                  </figure>
+                  <span>Logout</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="main-section" style="padding: 65px 60px;">
+            <!-- Breadcrumb Section Start -->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="reviewerDocument.html">Documents Details</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Document Viewer
+                </li>
+              </ol>
+            </nav>
+            <!-- Breadcrumb Section End -->
+<div >
+    
+  
+    <div class="box-card " style="width: 100%;">
+      <div class="row">
+        
+        <div class="col-md-3">
+          <div class="form-group">
+            <label>Company Name</label>
+            <input type="text" class="form-control-plaintext" value="Ayana Renewable Power"/>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label>Project Name</label>
+            <input type="text" class="form-control-plaintext" value="Company Policy"/>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label>Document Type</label>
+            <input type="text" class="form-control-plaintext" value="Policy Document"/>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label>Document Title</label>
+            <input type="text" class="form-control-plaintext" value="H R Policy for 2020"/>
+          </div>
+        </div>
+      </div>
+    
+  
+  </div>
+    
+            <div class="box-card" style='min-height:800px;width:100%;display:flex'>
+                    <!-- <div class="row"><div class="col"><h1 class="heading m-b-25">Document Viewer</h1></div></div> -->
+                   
+                <!-- <div class="row"> -->
+       
+       <div class="pdf  " id="pdf"  >
+         <div class="row" >
+           <div class="col-md-1"></div>
+             <div class="col-md-10">
+            <h4 class="text-center">Test.pdf </h4>
+          </div>      
+          <div class="col-md-1 text-right">
+            <img class="exp collapse-img  " />
+          </div>
+        </div>
+            <!-- <button class="exp btn btn-danger"
+             
+            >-</button> -->
+
+            
+            <div class="row " 
+            style="background-color: #474747;height: 40px; margin:0px;padding-top: 8px;transition:width 0.25s ease-out"
+            >
+              <div class="col-md-3">
+                
+                <img class="search-bar-icons" src="../images/previous.png">
+                
+                  <input type="text" style="width: 55px;" placeholder="Page No"/>
+                
+               <img src="../images/next.png" class="search-bar-icons">
+              </div>
+
+              <div class="col-md-6 text-center">
+                
+               <input type="text" placeholder="Enter Text To Search"/>
+               <img src="../images/up.png"class="search-bar-icons">
+               <img src="../images/down.png" class="search-bar-icons">
+               <img src="../images/highlighter.png" class="search-bar-icons">
+               <!-- <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <div class="search"></div>
+              </div> -->
+              </div>
+              <div class="col-md-3 text-right">
+                
+                <img src="../images/zoom-in.png" class="search-bar-icons">
+                
+                  <input type="text" placeholder="Zoom" style="width: 50px; "/>
+                
+               <img src="../images/zoom-out.png" class="search-bar-icons">
+              </div>
+              
+            </div>
+        <embed src="List Of Prospective Customers.pdf" class="pdf1"type="application/pdf" width="100%" height="1000px" />
+      
+        </div>
+        <div id="comment1" class="comment " style="border-left: 3px solid #000; " >
+          <h4 class="text-center">Comments</h4>
+           <ul style="list-style:none;padding-left:25px">
+             <li>
+              <!-- style="color:#0087D5" -->
+              <div>
+              <span> Ramesh: </span>
+              <span>           12-12-2019 02:15</span>
+              <div class="comment-section">
+               <h5 class="position-relative comment-heading" >Government between 1995-99
+                <a
+                href="#"
+                class="link-delete"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                title="Add Comment"
+                onclick="commentBox()"
+                
+              >
+              <svg
+              x="0px"
+              y="0px"
+              width="16px"
+              height="16px"
+              viewBox="0 0 16 16"
+              enable-background="new 0 0 16 16"
+              xml:space="preserve"
+            >
+              <g>
+                <circle
+                  fill="none"
+                  stroke="#69951a"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  cx="8"
+                  cy="8"
+                  r="7.5"
+                />
+                <g>
+                  <line
+                    fill="none"
+                    stroke="#69951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    x1="2.5"
+                    y1="8"
+                    x2="13.5"
+                    y2="8"
+                  />
+
+                  <line
+                    fill="none"
+                    stroke="#69951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    x1="8"
+                    y1="2.5"
+                    x2="8"
+                    y2="13.5"
+                  />
+                </g>
+              </g>
+            </svg>
+              </a>
+              <div id="com1" class="position-absolute box-card" style="left:48px;width:220px;margin:0;padding:10px;display:none" >
+                <div  class="form-group " style="margin:0">
+                  <textarea class="form-control" rows=2 cols=3 placeholder="Enter Comments" style="width: 220;height:80"></textarea>
+                </div>
+                <button class="btn btn-danger mt-1" onclick="commentBox()">
+                  Add 
+                </button>
+              </div></h5>
+              
+               <p class="text-justify comment-body ">Lorem Ipsum  dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              </div>
+            </div>
+            <div style="margin-left:25px; margin-top: 10px">
+              <span> Karthik: </span>
+              <span>           12-12-2019 03:15</span>
+              <div class="comment-section">
+               <h5 class="position-relative comment-heading" >Government between 1995-99
+                <a
+                href="#"
+                class="link-delete"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                title="Add Comment"
+                
+              >
+              <svg
+              x="0px"
+              y="0px"
+              width="16px"
+              height="16px"
+              viewBox="0 0 16 16"
+              enable-background="new 0 0 16 16"
+              xml:space="preserve"
+            >
+              <g>
+                <circle
+                  fill="none"
+                  stroke="#69951a"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  cx="8"
+                  cy="8"
+                  r="7.5"
+                />
+                <g>
+                  <line
+                    fill="none"
+                    stroke="#69951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    x1="2.5"
+                    y1="8"
+                    x2="13.5"
+                    y2="8"
+                  />
+
+                  <line
+                    fill="none"
+                    stroke="#69951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    x1="8"
+                    y1="2.5"
+                    x2="8"
+                    y2="13.5"
+                  />
+                </g>
+              </g>
+            </svg>
+              </a>
+              <div id="com1" class="position-absolute box-card" style="left:48px;width:220px;margin:0;padding:10px;display:none" >
+                <div  class="form-group " style="margin:0">
+                  <textarea class="form-control" rows=2 cols=3 placeholder="Enter Comments" style="width: 220;height:80"></textarea>
+                </div>
+                <button class="btn btn-danger mt-1" onclick="commentBox()">
+                  Add 
+                </button>
+              </div></h5>
+              
+               <p class="text-justify comment-body ">Lorem Ipsum  dummy text of the printing and typesetting industry.</p>
+              </div>
+            </div>
+             </li>
+             
+            
+           </ul>
+          
+        </div>
+      </div>
+    <!-- </div> -->
+
+  
+
+</div>
+<!-- Notifications Section start -->
+
+<section class="notifications-section">
+        <div class="notifications-heading">
+          Notifications
+  
+          <a href="javascript:void(0)" class="float-right notifications-close">
+            <img src="../images/close-icon.png" />
+          </a>
+        </div>
+        <ul class="list-unstyled" style="max-height: 550px; overflow: auto !important">
+          <li>
+            <a href="#">
+              Welcome to Ayana
+              <small>18-04-2019 12:00 </small>
+            </a>
+          </li>
+          <li>
+          <a href="#">
+            Welcome to Ayana
+            <small>18-04-2019 12:00 </small>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Welcome to Ayana
+            <small>18-04-2019 12:00 </small>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Welcome to Ayana
+            <small>18-04-2019 12:00 </small>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Welcome to Ayana
+            <small>18-04-2019 12:00 </small>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Welcome to Ayana
+            <small>18-04-2019 12:00 </small>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Welcome to Ayana
+            <small>18-04-2019 12:00 </small>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Welcome to Ayana
+            <small>18-04-2019 12:00 </small>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Welcome to Ayana
+            <small>18-04-2019 12:00 </small>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Welcome to Ayana
+            <small>18-04-2019 12:00 </small>
+          </a>
+        </li>
+        <li style="text-align: center">
+          <a href="#" class="more" style="padding:7px 12px !important">More...</a>
+        </li>
+        </ul>
+        
+      </section>
+  
+      <!-- Notifications Section End -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+
+    <script>
+        function myFunction() {
+          location.replace("documentdetails.html");
+        }
+      </script>
+
+    <script>
+        $(".menu-icon").click(function () {
+            
+            $(".nav-section").toggleClass("expand");
+            $(".main-section").toggleClass("expand");
+        });
+        $(".exp").click(function () {
+          console.log("asd")
+            
+            $(".pdf").toggleClass("expand");
+            $(".comment").toggleClass("expand");
+            $(".collapse-img").toggleClass("expand");
+            
+
+        });
+
+        $(".notifications, .notifications-close").click(function () {
+            $(".notifications-section").toggleClass("expand");
+        });
+
+        $(document).ready(function () {
+            var date_input = $('.date'); //our date input has the name "date"
+            var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+            date_input.datepicker({
+                format: 'dd/mm/yyyy',
+                container: container,
+                todayHighlight: true,
+                autoclose: true,
+            })
+        })
+    </script>
+     <script>
+ function showDiv() {
+   document.getElementById('addDiv').style.display = "block";
+   document.getElementById('showlistDiv').style.display="none";
+}
+function closeDiv()
+{
+    document.getElementById('addDiv').style.display = "none";
+   document.getElementById('showlistDiv').style.display="block";
+}
+ function showDiv1() {
+   document.getElementById('addDiv1').style.display = "block";
+   document.getElementById('showlistDiv1').style.display="none";
+}
+function closeDiv1()
+{
+    document.getElementById('addDiv1').style.display = "none";
+   document.getElementById('showlistDiv1').style.display="block";
+}
+  function showDiv2() {
+   document.getElementById('addDiv2').style.display = "block";
+   document.getElementById('showlistDiv2').style.display="none";
+}
+function closeDiv2()
+{
+    document.getElementById('addDiv2').style.display = "none";
+   document.getElementById('showlistDiv2').style.display="block";
+}
+function collapse(){
+  var coll = document.getElementById("pdf");
+  console.log(coll)
+  var content=document.getElementById("comment")
+  // if (content.style.display === "block") {
+
+  //     content.style.display = "none";
+  //     coll.classList.add("col-md-12")
+
+  //   } else {
+  //     coll.classList.remove("col-md-12")
+  //     coll.classList.add("col-md-9")
+  //     content.style.display = "block";
+  //   }
+  coll.classList.toggle("active")
+
+  if (content.style.maxWidth) {
+
+content.style.maxWidth=null
+// coll.classList.add("col-md-12")
+
+
+} else {
+// coll.classList.remove("col-md-12")
+// coll.classList.add("col-md-9")
+content.style.maxWidth=content.scrollWidth + "px";
+}
+
+
+
+}
+function commentBox(){
+  var content = document.getElementById("com1");
+  console.log("comment",content)
+    if (content.style.display=="block"){
+      content.style.display="none"
+    } else {
+      content.style.display="block"
+    } 
+}
+ 
+ </script>
+  </body>
+  </html>

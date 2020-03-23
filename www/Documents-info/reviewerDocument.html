@@ -1,0 +1,1885 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Ayana Renewable Power</title>
+    <link
+    rel="shortcut icon"
+    type="image/x-icon"
+    href="../images/favicon.ico"
+  />
+    <!-- css files -->
+    <link rel="stylesheet" href="../css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <style type="text/css">
+      .table-style-1 > tbody > tr > td:nth-child(1) {
+        width: 400px;
+      }
+      .table-style-1 > tbody > tr > td:nth-child(2) {
+        width: 250px;
+      }
+      .checked {
+        color: orange;
+      }
+      #page {
+        color: black;
+      }
+      #page:hover {
+        color:#0087D5;
+      }
+      .m-l-45 {
+        margin-left: 25px !important;
+      }
+      .more:hover {
+        background-color: white !important;
+      }
+
+      /* width */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background:#69951a;
+        border-radius: 10px;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background:#4e7507;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header section start -->
+    <header>
+        <div class="row align-items-center no-gutters">
+          <div class="col-6">
+            <a href="javascript:void(0)" class="menu-icon">
+              <svg width="18px" height="18px" viewBox="0 0 177 130">
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g id="svg" fill-rule="nonzero" fill="#000000">
+                    <path
+                      d="M0,0 L0,10 L176.724,10 L176.724,0 L0,0 Z M0,69.92 L176.724,69.92 L176.724,59.92 L0,59.92 L0,69.92 Z M0,129.84 L107.724,129.84 L107.724,119.84 L0,119.84 L0,129.84 Z"
+                      id="Shape"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <a href="#" class="brand-name">
+              <img src="../images/logo.jpg" />
+            </a>
+          </div>
+          <div class="col-6 text-right">
+            <ul class="list-inline info-list">
+              <li class="list-inline-item username">
+                <a href="#">Welcome !</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <svg
+                    x="0px"
+                    y="0px"
+                    width="22px"
+                    height="22px"
+                    viewBox="0 0 16 16"
+                  >
+                    <g transform="translate(0, 0)">
+                      <path
+                        data-color="color-2"
+                        d="M14.5,12.976a1,1,0,0,0-.426-.82A10.367,10.367,0,0,0,8,10.5a10.367,10.367,0,0,0-6.074,1.656,1,1,0,0,0-.426.82V15.5h13Z"
+                        fill="none"
+                        stroke="#69951a"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <circle
+                        cx="8"
+                        cy="4"
+                        r="3.5"
+                        fill="none"
+                        stroke="#69951a"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></circle>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-inline-item notifications">
+                <a href="#">
+                  <svg
+                    x="0px"
+                    y="0px"
+                    width="22px"
+                    height="22px"
+                    viewBox="0 0 16 16"
+                  >
+                    <g transform="translate(0, 0)">
+                      <path
+                        data-color="color-2"
+                        fill="none"
+                        stroke="#69951a"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                        d=" M10,13.5c0,1.105-0.895,2-2,2s-2-0.895-2-2"
+                      ></path>
+                      <line
+                        fill="none"
+                        stroke="#69951a"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                        x1="0.5"
+                        y1="11.5"
+                        x2="15.5"
+                        y2="11.5"
+                      ></line>
+                      <path
+                        fill="none"
+                        stroke="#69951a"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                        d="M14.5,11.5H15 c-1.105,0-2.5-0.895-2.5-2V5c0-2.485-2.015-4.5-4.5-4.5h0C5.515,0.5,3.5,2.515,3.5,5v4.5c0,1.105-0.895,2-2,2"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    <!-- Header section end -->
+
+    <!-- Navigation Section start -->
+   <section class="nav-section" style="overflow-y: auto;overflow-x: hidden">
+      <ul class="list-unstyled">
+        <li>
+          <a href="../Users/usersview.html">
+            <figure>
+              <svg
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+                viewBox="0 0 16 16"
+              >
+                <g transform="translate(0, 0)">
+                  <path
+                    data-color="color-2"
+                    d="M14.5,12.976a1,1,0,0,0-.426-.82A10.367,10.367,0,0,0,8,10.5a10.367,10.367,0,0,0-6.074,1.656,1,1,0,0,0-.426.82V15.5h13Z"
+                    fill="none"
+                    stroke="#69951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <circle
+                    cx="8"
+                    cy="4"
+                    r="3.5"
+                    fill="none"
+                    stroke="#69951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></circle>
+                </g>
+              </svg>
+            </figure>
+            <span>User Mgmt.</span>
+          </a>
+        </li>
+        <li>
+          <a href="../Documents/documentsList.html">
+            <figure>
+              <svg
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+                viewBox="0 0 16 16"
+              >
+                <g transform="translate(0, 0)">
+                  <line
+                    fill="none"
+                    stroke="#69951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    x1="4.5"
+                    y1="11.5"
+                    x2="11.5"
+                    y2="11.5"
+                    data-color="color-2"
+                  ></line>
+                  <line
+                    fill="none"
+                    stroke="#69951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    x1="4.5"
+                    y1="8.5"
+                    x2="11.5"
+                    y2="8.5"
+                    data-color="color-2"
+                  ></line>
+                  <line
+                    fill="none"
+                    stroke="#69951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    x1="4.5"
+                    y1="5.5"
+                    x2="6.5"
+                    y2="5.5"
+                    data-color="color-2"
+                  ></line>
+                  <polygon
+                    fill="none"
+                    stroke="#69951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 "
+                  ></polygon>
+                  <polyline
+                    fill="none"
+                    stroke="#69951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    points="9.5,0.5 9.5,5.5 14.5,5.5 "
+                  ></polyline>
+                </g>
+              </svg>
+            </figure>
+            <span>Task Upload</span>
+          </a>
+        </li>
+        <li><a href="../Documents/contributer.html">
+            <figure>
+                <svg x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16 16">
+                    <g transform="translate(0, 0)">
+                        <line fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-miterlimit="10" x1="4.5" y1="11.5" x2="11.5" y2="11.5" data-color="color-2">
+                        </line>
+                        <line fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-miterlimit="10" x1="4.5" y1="8.5" x2="11.5" y2="8.5" data-color="color-2">
+                        </line>
+                        <line fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-miterlimit="10" x1="4.5" y1="5.5" x2="6.5" y2="5.5" data-color="color-2">
+                        </line>
+                        <polygon fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-miterlimit="10" points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 ">
+                        </polygon>
+                        <polyline fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-miterlimit="10" points="9.5,0.5 9.5,5.5 14.5,5.5 "></polyline>
+                    </g>
+                </svg>
+            </figure> <span>Task Review</span>
+        </a></li>
+        <li><a href="documentsList.html">
+            <figure>
+                <svg x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16 16">
+                    <g transform="translate(0, 0)">
+                        <line fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-miterlimit="10" x1="4.5" y1="11.5" x2="11.5" y2="11.5" data-color="color-2">
+                        </line>
+                        <line fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-miterlimit="10" x1="4.5" y1="8.5" x2="11.5" y2="8.5" data-color="color-2">
+                        </line>
+                        <line fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-miterlimit="10" x1="4.5" y1="5.5" x2="6.5" y2="5.5" data-color="color-2">
+                        </line>
+                        <polygon fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-miterlimit="10" points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 ">
+                        </polygon>
+                        <polyline fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-miterlimit="10" points="9.5,0.5 9.5,5.5 14.5,5.5 "></polyline>
+                    </g>
+                </svg>
+            </figure> <span>Document Upload</span>
+        </a></li>
+        <li><a href="contributer.html">
+          <figure>
+              <svg x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16 16">
+                  <g transform="translate(0, 0)">
+                      <line fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-miterlimit="10" x1="4.5" y1="11.5" x2="11.5" y2="11.5" data-color="color-2">
+                      </line>
+                      <line fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-miterlimit="10" x1="4.5" y1="8.5" x2="11.5" y2="8.5" data-color="color-2">
+                      </line>
+                      <line fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-miterlimit="10" x1="4.5" y1="5.5" x2="6.5" y2="5.5" data-color="color-2">
+                      </line>
+                      <polygon fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-miterlimit="10" points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 ">
+                      </polygon>
+                      <polyline fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-miterlimit="10" points="9.5,0.5 9.5,5.5 14.5,5.5 "></polyline>
+                  </g>
+              </svg>
+          </figure> <span>Document View</span>
+      </a></li>
+        <li>
+          <a href="../QuestionTest/questionList.html">
+            <figure>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="16px" height="16px" class=""><g><g>
+                <g>
+                  <g>
+                    <circle cx="256" cy="378.5" r="25" data-original="#000000" class="active-path" data-old_color="#000000" fill="#69951A"/>
+                    <path d="M256,0C114.516,0,0,114.497,0,256c0,141.484,114.497,256,256,256c141.484,0,256-114.497,256-256     C512,114.516,397.503,0,256,0z M256,472c-119.377,0-216-96.607-216-216c0-119.377,96.607-216,216-216     c119.377,0,216,96.607,216,216C472,375.377,375.393,472,256,472z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#69951A"/>
+                    <path d="M256,128.5c-44.112,0-80,35.888-80,80c0,11.046,8.954,20,20,20s20-8.954,20-20c0-22.056,17.944-40,40-40     c22.056,0,40,17.944,40,40c0,22.056-17.944,40-40,40c-11.046,0-20,8.954-20,20v50c0,11.046,8.954,20,20,20     c11.046,0,20-8.954,20-20v-32.531c34.466-8.903,60-40.26,60-77.469C336,164.388,300.112,128.5,256,128.5z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#69951A"/>
+                  </g>
+                </g>
+              </g></g> </svg>
+            </figure>
+            <span>Question Mgmt.</span>
+          </a>
+        </li>
+        <li>
+          <a href="../QuestionTest/TestList.html">
+            <figure>
+              <img src="../images/test.svg">
+            </figure>
+            <span>Compl. Test</span>
+          </a>
+        </li>
+        <li><a href="../Masters/masters.html">
+          <figure>
+              <img src="../images/master.svg"/>
+          </figure> <span>Masters</span>
+      </a></li>
+      <li>
+        <a href="../employeeView/TestList.html">
+          <figure>
+            <?xml version="1.0"?>
+            <svg xmlns="http://www.w3.org/2000/svg"  height="16px" viewBox="-32 0 512 512" width="16px" class=""><g><path d="m59.921875 471.371094c-11.015625 0-19.976563-8.957032-19.976563-19.972656v-351.53125c0-11.011719 8.960938-19.972657 19.976563-19.972657h32.953125v78.894531h199.734375v-78.894531h31.957031c11.015625 0 19.976563 8.960938 19.976563 19.972657v221.890624l39.945312-44.476562v-177.414062c0-33.039063-26.878906-59.921876-59.921875-59.921876h-75.324218c-8.242188-23.25-30.457032-39.945312-56.5-39.945312-26.039063 0-48.253907 16.695312-56.496094 39.945312h-76.324219c-33.042969 0-59.921875 26.882813-59.921875 59.921876v351.53125c0 33.042968 26.878906 59.921874 59.921875 59.921874h162.488281l-41.964844-39.949218zm112.847656-391.476563v-19.972656c0-11.015625 8.960938-19.976563 19.972657-19.976563 11.015624 0 19.976562 8.960938 19.976562 19.976563v19.972656h39.945312v38.949219h-119.839843v-38.949219zm131.824219 158.789063h-144.804688v-39.949219h144.804688zm-184.753906-39.949219v39.949219h-39.945313v-39.949219zm40.945312 119.84375v-39.949219h143.808594v39.949219zm-39.945312 0h-40.945313v-39.949219h40.945313zm-40.945313 39.945313h39.945313v39.945312h-39.945313zm367.390625-31.59375-166.222656 185.070312-108.082031-102.882812 27.542969-28.933594 78.296874 74.53125 138.746094-154.480469zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#69951A"/></g> </svg>
+          </figure>
+          <span>Employee Test </span>
+        </a>
+      </li>
+        <li>
+          <a href="#">
+            <figure>
+              <svg
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+                viewBox="0 0 16 16"
+              >
+                <g transform="translate(0, 0)">
+                  <circle
+                    data-color="color-2"
+                    fill="none"
+                    stroke="#69951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    cx="8"
+                    cy="8"
+                    r="2.5"
+                  ></circle>
+                  <path
+                    fill="none"
+                    stroke="#69951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    d="M15.5,9V7 l-2.177-0.363c-0.131-0.512-0.332-0.994-0.595-1.437l1.283-1.796L12.596,1.99L10.8,3.272c-0.443-0.263-0.925-0.464-1.437-0.595 L9,0.5H7L6.637,2.677C6.125,2.808,5.643,3.009,5.2,3.272L3.404,1.99L1.99,3.404L3.272,5.2C3.009,5.643,2.808,6.125,2.677,6.637 L0.5,7v2l2.177,0.363c0.131,0.512,0.332,0.994,0.595,1.437L1.99,12.596l1.414,1.414L5.2,12.728c0.443,0.263,0.925,0.464,1.437,0.595 L7,15.5h2l0.363-2.177c0.512-0.131,0.994-0.332,1.437-0.595l1.796,1.283l1.414-1.414L12.728,10.8 c0.263-0.443,0.464-0.925,0.595-1.437L15.5,9z"
+                  ></path>
+                </g>
+              </svg>
+            </figure>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <figure>
+              <svg
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+                viewBox="0 0 16 16"
+                style="transform: rotate(90deg);"
+              >
+                <g transform="translate(0, 0)">
+                  <polygon
+                    fill="none"
+                    stroke="#69951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    points="12.5,5.5 8,0.5 3.5,5.5 6.5,5.5 6.5,11.5 9.5,11.5 9.5,5.5 "
+                    data-color="color-2"
+                  ></polygon>
+                  <path
+                    fill="none"
+                    stroke="#69951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.5,10.5v4c0,0.552-0.448,1-1,1h-13 c-0.552,0-1-0.448-1-1v-4"
+                  ></path>
+                </g>
+              </svg>
+            </figure>
+            <span>Logout</span>
+          </a>
+        </li> 
+      </ul>
+    </section>
+    <!-- Navigation Section End -->
+
+    <!-- Main Section start -->
+    <section class="main-section">
+      <!-- Breadcrumb Section Start -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="contributer.html">Document List</a>
+          </li>
+
+          <li class="breadcrumb-item active" aria-current="page">
+              Document Details
+          </li>
+        </ol>
+      </nav>
+      <!-- Breadcrumb Section End -->
+
+      <h1 class="heading m-b-25">Document Details</h1>
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <!-- Form Section start -->
+          <div class="box-card" style="height: 440px">
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <label>Category<span style="color:red">*</span></label>
+                    <input
+                      type="text"
+                      readonly
+                      class="form-control-plaintext"
+                      value="Regulatory Info / Policies"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <label>Description<span style="color:red">*</span></label>
+                    <textarea
+                    
+                      class="form-control-plaintext text-justify"
+                      readonly
+                    
+                    >March Policy 1</textarea>
+                  </div>
+                </div>
+              </div>
+            <div class="row">
+              
+                <div class="col-md-3 col-lg-3">
+                    <div class="form-group">
+                      <label>Created By <span style="color:red">*</span></label>
+                      <input
+                        type="text"
+                        readonly
+                        class="form-control-plaintext"
+                        value="Raj@gmail.com"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-lg-3">
+                      <div class="form-group">
+                        <label>Created On<span style="color:red">*</span></label>
+                        <input
+                          type="text"
+                          readonly
+                          class="form-control-plaintext"
+                          value="22-03-2020 12:30"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <div class="form-group">
+                          <label>Last Modified By<span style="color:red">*</span></label>
+                          <input
+                            type="text"
+                            readonly
+                            class="form-control-plaintext"
+                            value="Raj@gmail.com"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-lg-3">
+                          <div class="form-group">
+                            <label>Last Modified On <span style="color:red">*</span></label>
+                            <input
+                              type="text"
+                              readonly
+                              class="form-control-plaintext"
+                              value="22-03-2020 12:45"
+                            />
+                          </div>
+                        </div>
+              </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <div class="form-group">
+                        <label>Status</label>
+                        <input
+                              type="text"
+                              readonly
+                              class="form-control-plaintext"
+                              value="Active"
+                            />
+                      </div>
+                  </div>
+            </div>
+            <!-- <div class="row">
+              <div class="col-md-5">
+                <button type="button" class="btn btn-danger">Edit</button>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <!-- Form Section End -->
+        </div>
+      </div>
+      
+      
+
+      <!-- Tabs Section start -->
+      <div class="tab-style-1">
+        <div
+          class="nav flex-column nav-pills"
+          id="v-pills-tab"
+          role="tablist"
+          aria-orientation="vertical"
+        >
+          <a
+            class="nav-link active"
+            id="doc-tab"
+            data-toggle="pill"
+            href="#doc"
+            role="tab"
+            aria-controls="doc"
+            aria-selected="false"
+          >
+            <span>CEA</span>
+          </a>
+          <!-- <a
+            class="nav-link "
+            id="serv-tab"
+            data-toggle="pill"
+            href="#serv"
+            role="tab"
+            aria-controls="serv"
+            aria-selected="true"
+          >
+            <span>MNRE</span>
+          </a> -->
+          <a
+            class="nav-link "
+            id="doc-tab"
+            data-toggle="pill"
+            href="#doc"
+            role="tab"
+            aria-controls="doc"
+            aria-selected="true"
+          >
+            <span>MNRE</span>
+          </a>
+        </div>
+
+        <div class="tab-content" id="v-pills-tabContent">
+          <div
+            class="tab-pane fade "
+            id="serv"
+            role="tabpanel"
+            aria-labelledby="serv-tab"
+          >
+            <div class="box-card">
+              <div class="row">
+                <div class="col-md-12">
+                  <div id="addDiv" style="display:none;">
+                    <div class="row align-items-center">
+                      <div class="col-md-10">
+                        <h1 class="heading m-b-0">Add Reviewers</h1>
+                      </div>
+                      <div class="col-md-2 text-right">
+                        <a href="#" onclick="closeDiv()" class="link-click ">
+                          <svg
+                            x="0px"
+                            y="0px"
+                            width="16px"
+                            height="16px"
+                            viewBox="0 0 16 16"
+                            enable-background="new 0 0 16 16"
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <line
+                                fill="none"
+                                stroke="#69951a"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-miterlimit="10"
+                                x1="3.25"
+                                y1="3.25"
+                                x2="12.75"
+                                y2="12.75"
+                              />
+
+                              <line
+                                fill="none"
+                                stroke="#69951a"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-miterlimit="10"
+                                x1="12.75"
+                                y1="3.25"
+                                x2="3.25"
+                                y2="12.75"
+                              />
+                            </g>
+                          </svg>
+                          Close</a
+                        >
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-md-12 col-lg-12">
+                        <div class="row">
+                          <div class="col-md-12 col-lg-6">
+                            <div class="form-group">
+                              <label>Name<span style="color:red">*</span></label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Select User"
+                                readonly
+                                data-toggle="modal"
+                                data-target="#selectGeoId"
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12 col-lg-10">
+                          <div class="row">
+                            <div class="col-md-12 ">
+                              <button type="button" class="btn btn-danger">
+                                Submit
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-light m-l-50"
+                              >
+                                Clear
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="p-t-0" id="showlistDiv">
+                    <div class="row align-items-center">
+                      <div class="col-md-10">
+                        <h1 class="heading m-b-0">
+                          Reviewer List View
+                        </h1>
+                      </div>
+                      <div class="col-md-2 text-right">
+                        <a href="#" onclick="showDiv()" class="link-click ">
+                          <svg
+                            x="0px"
+                            y="0px"
+                            width="16px"
+                            height="16px"
+                            viewBox="0 0 16 16"
+                            enable-background="new 0 0 16 16"
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <circle
+                                fill="none"
+                                stroke="#69951a"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                cx="8"
+                                cy="8"
+                                r="7.5"
+                              />
+                              <g>
+                                <line
+                                  fill="none"
+                                  stroke="#69951a"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-miterlimit="10"
+                                  x1="2.5"
+                                  y1="8"
+                                  x2="13.5"
+                                  y2="8"
+                                />
+
+                                <line
+                                  fill="none"
+                                  stroke="#69951a"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-miterlimit="10"
+                                  x1="8"
+                                  y1="2.5"
+                                  x2="8"
+                                  y2="13.5"
+                                />
+                              </g>
+                            </g>
+                          </svg>
+                          Add</a
+                        >
+                      </div>
+                    </div>
+                    <!-- Table Section Start -->
+                    <div class="table-responsive">
+                      <table class="table table-style-1 m-t-35">
+                        <thead>
+                          <tr>
+                            <th scope="col" width="180">EMPLOYEE ID</th>
+                            <th scope="col" width="200">
+                              NAME
+                            </th>
+                            <th scope="col" width="420">ACTION</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Raj</td>
+                            <td>
+                              <a
+                              href="#"
+                              class="link-delete m-l-45"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="Delete"
+                            >
+                              <svg
+                                x="0px"
+                                y="0px"
+                                width="16px"
+                                height="16px"
+                                viewBox="0 0 16 16"
+                              >
+                                <g transform="translate(0, 0)">
+                                  <path
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    d="M2.5,6.5v7 c0,1.105,0.895,2,2,2h8c1.105,0,2-0.895,2-2v-7"
+                                  ></path>
+                                  <line
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="1.5"
+                                    y1="3.5"
+                                    x2="15.5"
+                                    y2="3.5"
+                                  ></line>
+                                  <polyline
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    points=" 6.5,3.5 6.5,0.5 10.5,0.5 10.5,3.5 "
+                                  ></polyline>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="8.5"
+                                    y1="7.5"
+                                    x2="8.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="11.5"
+                                    y1="7.5"
+                                    x2="11.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="5.5"
+                                    y1="7.5"
+                                    x2="5.5"
+                                    y2="12.5"
+                                  ></line>
+                                </g>
+                              </svg>
+                            </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Ram</td>
+                            <td>
+                              <a
+                                href="#"
+                                class="link-delete m-l-45"
+                                data-toggle="tooltip"
+                                data-placement="bottom"
+                                title="Delete"
+                              >
+                                <svg
+                                  x="0px"
+                                  y="0px"
+                                  width="16px"
+                                  height="16px"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <g transform="translate(0, 0)">
+                                    <path
+                                      fill="none"
+                                      stroke="#61951a"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-miterlimit="10"
+                                      d="M2.5,6.5v7 c0,1.105,0.895,2,2,2h8c1.105,0,2-0.895,2-2v-7"
+                                    ></path>
+                                    <line
+                                      data-color="color-2"
+                                      fill="none"
+                                      stroke="#61951a"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-miterlimit="10"
+                                      x1="1.5"
+                                      y1="3.5"
+                                      x2="15.5"
+                                      y2="3.5"
+                                    ></line>
+                                    <polyline
+                                      data-color="color-2"
+                                      fill="none"
+                                      stroke="#61951a"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-miterlimit="10"
+                                      points=" 6.5,3.5 6.5,0.5 10.5,0.5 10.5,3.5 "
+                                    ></polyline>
+                                    <line
+                                      fill="none"
+                                      stroke="#61951a"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-miterlimit="10"
+                                      x1="8.5"
+                                      y1="7.5"
+                                      x2="8.5"
+                                      y2="12.5"
+                                    ></line>
+                                    <line
+                                      fill="none"
+                                      stroke="#61951a"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-miterlimit="10"
+                                      x1="11.5"
+                                      y1="7.5"
+                                      x2="11.5"
+                                      y2="12.5"
+                                    ></line>
+                                    <line
+                                      fill="none"
+                                      stroke="#61951a"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-miterlimit="10"
+                                      x1="5.5"
+                                      y1="7.5"
+                                      x2="5.5"
+                                      y2="12.5"
+                                    ></line>
+                                  </g>
+                                </svg>
+                              </a>  
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Ravi</td>
+                            <td>
+                              <a
+                              href="#"
+                              class="link-delete m-l-45"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="Delete"
+                            >
+                              <svg
+                                x="0px"
+                                y="0px"
+                                width="16px"
+                                height="16px"
+                                viewBox="0 0 16 16"
+                              >
+                                <g transform="translate(0, 0)">
+                                  <path
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    d="M2.5,6.5v7 c0,1.105,0.895,2,2,2h8c1.105,0,2-0.895,2-2v-7"
+                                  ></path>
+                                  <line
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="1.5"
+                                    y1="3.5"
+                                    x2="15.5"
+                                    y2="3.5"
+                                  ></line>
+                                  <polyline
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    points=" 6.5,3.5 6.5,0.5 10.5,0.5 10.5,3.5 "
+                                  ></polyline>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="8.5"
+                                    y1="7.5"
+                                    x2="8.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="11.5"
+                                    y1="7.5"
+                                    x2="11.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="5.5"
+                                    y1="7.5"
+                                    x2="5.5"
+                                    y2="12.5"
+                                  ></line>
+                                </g>
+                              </svg>
+                            </a> 
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                       <!-- Pagination Start -->
+                        <nav aria-label="Page navigation example">
+                          <ul
+                            class="pagination justify-content-center pagination-style-1"
+                          >
+                            <li class="page-item">
+                              <a
+                                class="page-link"
+                                href="#"
+                                aria-label="Previous"
+                                id="page"
+                                >&laquo; Previous
+                              </a>
+                            </li>
+
+                            <li class="page-item">
+                              <a
+                                class="page-link"
+                                href="#"
+                                aria-label="Next"
+                                id="page"
+                              >
+                                Next &raquo;
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                        <!-- Pagination End -->
+                    </div>
+                    <!-- Table Section End -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade show active"
+            id="doc"
+            role="tabpanel"
+            aria-labelledby="doc-tab"
+          >
+            <div class="box-card" id="exist-version">
+                <div class="row">
+                
+                    <div class="col-md-12">
+                        
+                      <div class="row align-items-center">
+                        <div class="col-md-10">
+                          <h1 class="heading m-b-0">Subcategory List</h1>
+                        </div> 
+                      </div>
+                    <!-- Table Section Start -->
+                    <div class="table-responsive">
+                      <table class="table table-style-1 ">
+                        <thead>
+                          <tr>
+                            <th scope="col" width="250">ID</th>
+                            <th scope="col" width="250">NAME</th>                          
+                            <th scope="col" width="420">ACTION</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Solar</td>
+                            <td>
+                              <a
+                              class="link-click"
+                              href="#"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="View"
+                              >
+                                  <svg x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16"
+                                  >
+                                    <g transform="translate(0, 0)">
+                                        <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="11.5" x2="11.5"
+                                            y2="11.5" data-color="color-2"></line>
+                                        <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="8.5" x2="11.5"
+                                            y2="8.5" data-color="color-2"></line>
+                                        <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="5.5" x2="6.5"
+                                            y2="5.5" data-color="color-2"></line>
+                                        <polygon fill="none" stroke="#69951a" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-miterlimit="10"
+                                            points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 "></polygon>
+                                        <polyline fill="none" stroke="#69951a" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-miterlimit="10"
+                                            points="9.5,0.5 9.5,5.5 14.5,5.5 "></polyline>
+                                    </g>
+                                  </svg>
+    
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Wind</td>
+                            <td>
+                              <a
+                              class="link-click"
+                              href="#"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="View"
+                              >
+                              <svg x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16"
+                              >
+                                <g transform="translate(0, 0)">
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="11.5" x2="11.5"
+                                        y2="11.5" data-color="color-2"></line>
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="8.5" x2="11.5"
+                                        y2="8.5" data-color="color-2"></line>
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="5.5" x2="6.5"
+                                        y2="5.5" data-color="color-2"></line>
+                                    <polygon fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 "></polygon>
+                                    <polyline fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        points="9.5,0.5 9.5,5.5 14.5,5.5 "></polyline>
+                                </g>
+                              </svg>
+                              </a>
+                              
+                            </td>
+                          </tr>
+                          <tr>
+                              <td>3</td>
+                              <td>Hydro</td>
+                              <td>
+                                <a
+                              class="link-click"
+                              href="#"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="View"
+                              >
+                                <svg x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16"
+                              >
+                                <g transform="translate(0, 0)">
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="11.5" x2="11.5"
+                                        y2="11.5" data-color="color-2"></line>
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="8.5" x2="11.5"
+                                        y2="8.5" data-color="color-2"></line>
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="5.5" x2="6.5"
+                                        y2="5.5" data-color="color-2"></line>
+                                    <polygon fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 "></polygon>
+                                    <polyline fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        points="9.5,0.5 9.5,5.5 14.5,5.5 "></polyline>
+                                </g>
+                              </svg>
+                              </a>
+                              
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>Hybrid</td>
+                                <td>
+                                  <a
+                              class="link-click"
+                              href="#"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="View"
+                              >
+                                  <svg x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16"
+                              >
+                                <g transform="translate(0, 0)">
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="11.5" x2="11.5"
+                                        y2="11.5" data-color="color-2"></line>
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="8.5" x2="11.5"
+                                        y2="8.5" data-color="color-2"></line>
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="5.5" x2="6.5"
+                                        y2="5.5" data-color="color-2"></line>
+                                    <polygon fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 "></polygon>
+                                    <polyline fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        points="9.5,0.5 9.5,5.5 14.5,5.5 "></polyline>
+                                </g>
+                              </svg>
+                              </a>
+                                </td>
+                              </tr>
+                        </tbody>
+                      </table>
+                    </div>                   
+                  </div>
+                    <!-- Table Section End -->
+                </div>
+              <div class="row">
+                
+                <div class="col-md-12">
+                    
+                  <div class="row align-items-center">
+                    <div class="col-md-10">
+                      <h1 class="heading m-b-0">Attachments</h1>
+                    </div>
+                      
+                  </div>
+                <!-- Table Section Start -->
+                <div class="text-right">
+                  <!-- <div class="upload-btn-wrapper">
+                    <a class="link-click" href="#" data-toggle="tooltip" data-placement="bottom" title="Upload" style="font-size: 16px;">
+                      <svg x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve"><g><circle fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round" cx="8" cy="8" r="7.5"></circle><g><line fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.5" y1="8" x2="13.5" y2="8"></line><line fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="8" y1="2.5" x2="8" y2="13.5"></line></g></g></svg> Add Attachments
+                    </a><input type="file" id="uploadAttachments" hidden="" name="attachments" accept=".doc, .docx, .ppt, .pptx, .pdf">
+                  </div> -->
+                  <!-- <div class="upload-btn-wrapper">
+                    <a
+                      class="link-click"
+                      href="#"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="Upload"
+                      style="font-size: 16px;"
+                    >
+                      <svg x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve"><g><circle fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round" cx="8" cy="8" r="7.5"></circle><g><line fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.5" y1="8" x2="13.5" y2="8"></line><line fill="none" stroke="#69951a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="8" y1="2.5" x2="8" y2="13.5"></line></g></g></svg> Add Attachments
+                    </a>
+                    <input type="file" name="myfile" />
+                  </div> -->
+                </div>
+                <div class="table-responsive">
+                  <table class="table table-style-1 ">
+                    <thead>
+                      <tr>
+                        <th scope="col" width="250">FILE NAME</th>
+                        <th scope="col" width="250">DESCRIPTION</th>                        
+                        <!-- <th scope="col" width="420">ACTION</th> -->
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>File1</td>
+                        <td>Description 1</td>
+                        <!-- <td>
+                          <a
+                          class="link-click"
+                          href="#"
+                          data-toggle="tooltip"
+                          data-placement="bottom"
+                          title="Add User"
+                          >
+                              <svg x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16"
+                              data-toggle="modal" 
+                              data-target="#selectGeoId"
+                              >
+                                <g transform="translate(0, 0)">
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="11.5" x2="11.5"
+                                        y2="11.5" data-color="color-2"></line>
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="8.5" x2="11.5"
+                                        y2="8.5" data-color="color-2"></line>
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="5.5" x2="6.5"
+                                        y2="5.5" data-color="color-2"></line>
+                                    <polygon fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 "></polygon>
+                                    <polyline fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        points="9.5,0.5 9.5,5.5 14.5,5.5 "></polyline>
+                                </g>
+                              </svg>
+
+                          </a>
+
+                          <a
+                          class="link-click m-l-45"
+                          href="#"
+                          data-toggle="tooltip"
+                          data-placement="bottom"
+                          title="Add Description"
+                          >
+                              <svg x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16"
+                              data-toggle="modal" 
+                              data-target="#createNewVersion"
+                              >
+                                <g transform="translate(0, 0)">
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="11.5" x2="11.5"
+                                        y2="11.5" data-color="color-2"></line>
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="8.5" x2="11.5"
+                                        y2="8.5" data-color="color-2"></line>
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="5.5" x2="6.5"
+                                        y2="5.5" data-color="color-2"></line>
+                                    <polygon fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 "></polygon>
+                                    <polyline fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        points="9.5,0.5 9.5,5.5 14.5,5.5 "></polyline>
+                                </g>
+                              </svg>
+
+                          </a>
+                        </td> -->
+                      </tr>
+                      <tr>
+                        <td>File2</td>
+                        <td>Description 2</td>
+                        
+                        <!-- <td>
+                          <div class="upload-btn-wrapper">
+                          <a
+                          class="link-click"
+                          href="#"
+                          data-toggle="tooltip"
+                          data-placement="bottom"
+                          title="Add User"
+                          >
+                          <svg x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16"
+                          data-toggle="modal" 
+                          data-target="#selectGeoId"
+                          >
+                            <g transform="translate(0, 0)">
+                                <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="11.5" x2="11.5"
+                                    y2="11.5" data-color="color-2"></line>
+                                <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="8.5" x2="11.5"
+                                    y2="8.5" data-color="color-2"></line>
+                                <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="5.5" x2="6.5"
+                                    y2="5.5" data-color="color-2"></line>
+                                <polygon fill="none" stroke="#69951a" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-miterlimit="10"
+                                    points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 "></polygon>
+                                <polyline fill="none" stroke="#69951a" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-miterlimit="10"
+                                    points="9.5,0.5 9.5,5.5 14.5,5.5 "></polyline>
+                            </g>
+                          </svg>
+                          </a>
+                          <a
+                          class="link-click m-l-45"
+                          href="#"
+                          data-toggle="tooltip"
+                          data-placement="bottom"
+                          title="Add Description"
+                          >
+                              <svg x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16"
+                              data-toggle="modal" 
+                              data-target="#createNewVersion"
+                              >
+                                <g transform="translate(0, 0)">
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="11.5" x2="11.5"
+                                        y2="11.5" data-color="color-2"></line>
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="8.5" x2="11.5"
+                                        y2="8.5" data-color="color-2"></line>
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="5.5" x2="6.5"
+                                        y2="5.5" data-color="color-2"></line>
+                                    <polygon fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 "></polygon>
+                                    <polyline fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        points="9.5,0.5 9.5,5.5 14.5,5.5 "></polyline>
+                                </g>
+                              </svg>
+
+                          </a>
+                        </td> -->
+                      </tr>
+                      <tr>
+                          <td>File3</td>
+                        <td>Description 3</td>
+                          
+                          <!-- <td>
+                            <a
+                          class="link-click"
+                          href="#"
+                          data-toggle="tooltip"
+                          data-placement="bottom"
+                          title="Add User"
+                          >
+                            <svg x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16"
+                          data-toggle="modal" 
+                          data-target="#selectGeoId"
+                          >
+                            <g transform="translate(0, 0)">
+                                <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="11.5" x2="11.5"
+                                    y2="11.5" data-color="color-2"></line>
+                                <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="8.5" x2="11.5"
+                                    y2="8.5" data-color="color-2"></line>
+                                <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="5.5" x2="6.5"
+                                    y2="5.5" data-color="color-2"></line>
+                                <polygon fill="none" stroke="#69951a" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-miterlimit="10"
+                                    points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 "></polygon>
+                                <polyline fill="none" stroke="#69951a" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-miterlimit="10"
+                                    points="9.5,0.5 9.5,5.5 14.5,5.5 "></polyline>
+                            </g>
+                          </svg>
+                          </a>
+                          <a
+                          class="link-click m-l-45"
+                          href="#"
+                          data-toggle="tooltip"
+                          data-placement="bottom"
+                          title="Add Description"
+                          >
+                              <svg x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16"
+                              data-toggle="modal" 
+                              data-target="#createNewVersion"
+                              >
+                                <g transform="translate(0, 0)">
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="11.5" x2="11.5"
+                                        y2="11.5" data-color="color-2"></line>
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="8.5" x2="11.5"
+                                        y2="8.5" data-color="color-2"></line>
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="5.5" x2="6.5"
+                                        y2="5.5" data-color="color-2"></line>
+                                    <polygon fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 "></polygon>
+                                    <polyline fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        points="9.5,0.5 9.5,5.5 14.5,5.5 "></polyline>
+                                </g>
+                              </svg>
+
+                          </a>
+                          </td> -->
+                        </tr>
+                        <tr>
+                            <td>File4</td>
+                        <td>Description 4</td>
+                            
+                            <!-- <td>
+                              <a
+                          class="link-click"
+                          href="#"
+                          data-toggle="tooltip"
+                          data-placement="bottom"
+                          title="Add User"
+                          >
+                              <svg x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16"
+                          data-toggle="modal" 
+                          data-target="#selectGeoId"
+                          >
+                            <g transform="translate(0, 0)">
+                                <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="11.5" x2="11.5"
+                                    y2="11.5" data-color="color-2"></line>
+                                <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="8.5" x2="11.5"
+                                    y2="8.5" data-color="color-2"></line>
+                                <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="5.5" x2="6.5"
+                                    y2="5.5" data-color="color-2"></line>
+                                <polygon fill="none" stroke="#69951a" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-miterlimit="10"
+                                    points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 "></polygon>
+                                <polyline fill="none" stroke="#69951a" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-miterlimit="10"
+                                    points="9.5,0.5 9.5,5.5 14.5,5.5 "></polyline>
+                            </g>
+                          </svg>
+                          </a>
+                          <a
+                          class="link-click m-l-45"
+                          href="#"
+                          data-toggle="tooltip"
+                          data-placement="bottom"
+                          title="Add Description"
+                          >
+                              <svg x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16"
+                              data-toggle="modal" 
+                              data-target="#createNewVersion"
+                              >
+                                <g transform="translate(0, 0)">
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="11.5" x2="11.5"
+                                        y2="11.5" data-color="color-2"></line>
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="8.5" x2="11.5"
+                                        y2="8.5" data-color="color-2"></line>
+                                    <line fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10" x1="4.5" y1="5.5" x2="6.5"
+                                        y2="5.5" data-color="color-2"></line>
+                                    <polygon fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 "></polygon>
+                                    <polyline fill="none" stroke="#69951a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        points="9.5,0.5 9.5,5.5 14.5,5.5 "></polyline>
+                                </g>
+                              </svg>
+
+                          </a>                              
+                            </td> -->
+                          </tr>
+                    </tbody>
+                  </table>
+                </div>                   
+              </div>
+                <!-- Table Section End -->
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Main Section End -->
+ <!-- Notifications Section start -->
+
+ <section class="notifications-section">
+    <div class="notifications-heading">
+      Notifications
+
+      <a href="javascript:void(0)" class="float-right notifications-close">
+        <img src="../images/close-icon.png" />
+      </a>
+    </div>
+    <ul class="list-unstyled" style="max-height: 550px; overflow: auto !important">
+      <li>
+        <a href="#">
+          Welcome to Ayana
+          <small>18-04-2019 12:00 </small>
+        </a>
+      </li>
+      <li>
+      <a href="#">
+        Welcome to Ayana
+        <small>18-04-2019 12:00 </small>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Welcome to Ayana
+        <small>18-04-2019 12:00 </small>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Welcome to Ayana
+        <small>18-04-2019 12:00 </small>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Welcome to Ayana
+        <small>18-04-2019 12:00 </small>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Welcome to Ayana
+        <small>18-04-2019 12:00 </small>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Welcome to Ayana
+        <small>18-04-2019 12:00 </small>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Welcome to Ayana
+        <small>18-04-2019 12:00 </small>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Welcome to Ayana
+        <small>18-04-2019 12:00 </small>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Welcome to Ayana
+        <small>18-04-2019 12:00 </small>
+      </a>
+    </li>
+    <li style="text-align: center">
+      <a href="#" class="more" style="padding:7px 12px !important">More...</a>
+    </li>
+    </ul>
+    
+  </section>
+
+
+ 
+
+  <!-- Notifications Section End -->
+
+
+  <!-- Create New Version Start -->
+
+  <div class="modal fade popup-style-1" id="createNewVersion" tabindex="-1" role="dialog" aria-labelledby="newModalCenterTitle"
+  aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <figure>
+                  <img src="../images/popup-logo.png">
+              </figure>
+              <h1 class="heading m-l-28">Update</h1>
+          </div>
+          <div class="modal-body">
+
+              <div class="row">
+                  <div class="col-6">
+                      <div class="form-group">
+                          <label>Description<span style="color:red">*</span></label>
+                          <textarea
+                          
+                            class="form-control text-justify"
+                          
+                          >March Policy 1</textarea>
+                        </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="form-group">
+                          <label>Tags<span style="color:red">*</span></label>
+                          <input
+                            type="text"
+                            readonly
+                            class="form-control"
+                            value=""
+                          />
+                        </div>
+                  </div>
+                </div>
+              
+              </div>
+              <!-- <div class="text-center">
+                <button class="btn btn-danger" onclick="onSubmitAttachment()">Submit for Approval</button>
+              </div> -->
+              <!-- Table end -->
+
+            
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default popup-button-default text-w-light"
+                      data-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-danger popup-button-danger">Submit</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+
+  <!-- Create New Version Modal End -->
+
+  <!-- Select User Modal Start -->
+
+    <div class="modal fade popup-style-1" id="selectGeoId" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <figure>
+                      <img src="../images/popup-logo.png">
+                  </figure>
+                  <h1 class="heading m-l-28">Select Users</h1>
+              </div>
+              <div class="modal-body">
+
+                  <!-- <div class="row">
+                      <div class="col-6">
+                          <div class="form-group">
+                              <label>NAME</label>
+                              <div class="ui-widget">
+                                  <input id="district" class="form-control autocomplete" placeholder="Please Enter Employee Name">
+                              </div>
+                          </div>
+                      </div>
+                  </div> -->
+                  <div class="row">
+                    <div class="col-md-12">
+                    <div class="table-responsive">
+                      <table class="table table-style-1 m-t-35">
+                        <thead>
+                          <tr>
+                            <th scope="col" width="180">EMPLOYEE ID</th>
+                            <th scope="col" width="200">
+                              NAME
+                            </th>
+                            <th scope="col" width="420">ACTION</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Raj</td>
+                            <td>
+                              <input
+                                  type="checkbox"
+                                  class="userCheckbox"
+                                  checked="true"
+                                />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Ram</td>
+                            <td>
+                              <input
+                                  type="checkbox"
+                                  class="userCheckbox"
+                                /> 
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Ravi</td>
+                            <td>
+                              <input
+                                  type="checkbox"
+                                  class="userCheckbox"
+                                />
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default popup-button-default text-w-light"
+                          data-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-danger popup-button-danger">Done</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- Select User Modal End -->
+
+    <!-- Script files -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"
+    ></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+
+    <script>
+      $(".menu-icon").click(function() {
+        $(".nav-section").toggleClass("expand");
+        $(".main-section").toggleClass("expand");
+      });
+
+      $(".notifications, .notifications-close").click(function() {
+        $(".notifications-section").toggleClass("expand");
+      });
+
+      $(document).ready(function() {
+        var date_input = $(".date"); //our date input has the name "date"
+        var container =
+          $(".bootstrap-iso form").length > 0
+            ? $(".bootstrap-iso form").parent()
+            : "body";
+        date_input.datepicker({
+          format: "dd/mm/yyyy",
+          container: container,
+          todayHighlight: true,
+          autoclose: true
+        });
+      });
+    </script>
+    <script>
+      function showDiv() {
+        document.getElementById("addDiv").style.display = "block";
+        document.getElementById("showlistDiv").style.display = "none";
+      }
+      function closeDiv() {
+        document.getElementById("addDiv").style.display = "none";
+        document.getElementById("showlistDiv").style.display = "block";
+      }
+      function showDiv1() {
+        document.getElementById("addDiv1").style.display = "block";
+        document.getElementById("showlistDiv1").style.display = "none";
+      }
+      function closeDiv1() {
+        document.getElementById("addDiv1").style.display = "none";
+        document.getElementById("showlistDiv1").style.display = "block";
+      }
+      function showDiv2() {
+        document.getElementById("addDiv2").style.display = "block";
+        document.getElementById("showlistDiv2").style.display = "none";
+      }
+      function closeDiv2() {
+        document.getElementById("addDiv2").style.display = "none";
+        document.getElementById("showlistDiv2").style.display = "block";
+      }
+    </script>
+    
+  </body>
+</html>
