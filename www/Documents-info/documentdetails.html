@@ -1764,7 +1764,10 @@
                               <td>Raj@ayanapower.com</td>
                               <td>Lorem ipsum, or lipsum as it is sometimes.</td>
                               <td>
-                                <button class="btn btn-danger popup-button-danger" style="padding: .375rem .75rem">
+                                <button class="btn btn-danger popup-button-danger" style="padding: .375rem .75rem" 
+                                data-dismiss="modal"
+                                data-toggle="modal" 
+                                data-target="#AddSuccess">
                                   Add
                                 </button>
                               </td>
@@ -1775,7 +1778,10 @@
                               <td>Raj@ayanapower.com</td>
                               <td>Lorem ipsum, or lipsum as it is sometimes.</td>
                               <td>
-                                  <button class="btn btn-danger popup-button-danger" style="padding: .375rem .75rem">
+                                  <button class="btn btn-danger popup-button-danger" style="padding: .375rem .75rem"
+                                  data-dismiss="modal"
+                                data-toggle="modal" 
+                                data-target="#AddSuccess">
                                       Add
                                     </button> 
                               </td>
@@ -1786,55 +1792,43 @@
                               <td>Ram@ayanapower.com</td>
                               <td>Lorem ipsum, or lipsum as it is sometimes.</td>
                               <td>
-                                  <button class="btn btn-danger popup-button-danger" style="padding: .375rem .75rem">
+                                  <button class="btn btn-danger popup-button-danger" style="padding: .375rem .75rem"
+                                  data-dismiss="modal"
+                                data-toggle="modal" 
+                                data-target="#AddSuccess">
                                       Add
                                     </button>
                               </td>
                             </tr>
                             <tr>
-                                <td>3</td>                            
+                                <td>4</td>                            
                                 <td>Hybrid</td>
                                 <td>Ram@ayanapower.com</td>
                                 <td>Lorem ipsum, or lipsum as it is sometimes.</td>
                                 <td>
-                                    <button class="btn btn-danger popup-button-danger" style="padding: .375rem .75rem">
+                                    <button class="btn btn-danger popup-button-danger" style="padding: .375rem .75rem"
+                                    data-dismiss="modal"
+                                data-toggle="modal" 
+                                data-target="#AddSuccess">
                                         Add
                                       </button>
                                 </td>
                               </tr>
                               <tr>
-                                  <td>3</td>                            
+                                  <td>5</td>                            
                                   <td>Hybrid</td>
                                   <td>Ram@ayanapower.com</td>
                                   <td>Lorem ipsum, or lipsum as it is sometimes.</td>
                                   <td>
-                                      <button class="btn btn-danger popup-button-danger" style="padding: .375rem .75rem">
+                                      <button class="btn btn-danger popup-button-danger" style="padding: .375rem .75rem"
+                                      data-dismiss="modal"
+                                data-toggle="modal" 
+                                data-target="#AddSuccess">
                                           Add
                                         </button>
                                   </td>
                                 </tr>
-                                <tr>
-                                    <td>3</td>                            
-                                    <td>Hybrid</td>
-                                    <td>Ram@ayanapower.com</td>
-                                    <td>Lorem ipsum, or lipsum as it is sometimes.</td>
-                                    <td>
-                                        <button class="btn btn-danger popup-button-danger" style="padding: .375rem .75rem">
-                                            Add
-                                          </button>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                      <td>3</td>                            
-                                      <td>Hybrid</td>
-                                      <td>Ram@ayanapower.com</td>
-                                      <td>Lorem ipsum, or lipsum as it is sometimes.</td>
-                                      <td>
-                                          <button class="btn btn-danger popup-button-danger" style="padding: .375rem .75rem">
-                                              Add
-                                            </button>
-                                      </td>
-                                    </tr>
+                                  
                           </tbody>
                         </table>
                       </div>
@@ -1852,6 +1846,37 @@
       </div>
     </div>
   <!-- Add Attachment Modal End -->
+
+  <div class="modal fade popup-style-1" id="AddSuccess" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+
+      <div class="modal-dialog modal-dialog-centered" role="document" style="width: 400px">
+          <div class="modal-content">
+              <!-- <div class="modal-header">
+                  <figure>
+                      <img src="../images/popup-logo.png">
+                  </figure>
+                  <h1 class="heading m-l-28">Upload Attachment</h1>
+              </div> -->
+              <div class="modal-body" style="padding-top: 0">
+                
+                <div class="alert alert-success p-0 m-t-10 m-b-0" role="alert">
+                  <svg x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16">
+                    <g transform="translate(0, 0)">
+                      <path fill="none" stroke="#8dc43f" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M13.423,6.999 C13.474,7.325,13.5,7.66,13.5,8c0,3.59-2.91,6.5-6.5,6.5S0.5,11.59,0.5,8S3.41,1.5,7,1.5c1.082,0,2.102,0.264,3,0.732" data-cap="butt"></path>
+                      <polyline fill="none" stroke="#8dc43f" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="4,6.5 7,9.5 15,1.5 " data-cap="butt" data-color="color-2"></polyline>
+                    </g>
+                  </svg>
+                  <span class="success-link">Grid Added Successfully</span>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger popup-button-danger"
+                    data-dismiss="modal">Ok</button>
+            </div>
+          </div>
+      </div>
+  </div>
 
     <!-- Script files -->
     <script src="../js/jquery-3.3.1.min.js"></script>
