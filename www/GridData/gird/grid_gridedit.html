@@ -75,7 +75,7 @@
     <header>
       <div class="row align-items-center no-gutters">
         <div class="col-6">
-          <a href="javascript:void(0)" class="menu-icon">
+          <!-- <a href="javascript:void(0)" class="menu-icon">
             <svg width="18px" height="18px" viewBox="0 0 177 130">
               <g
                 id="Page-1"
@@ -94,7 +94,7 @@
                 </g>
               </g>
             </svg>
-          </a>
+          </a> -->
           <a href="#" class="brand-name">
             <img src="../../images/logo.jpg" />
           </a>
@@ -494,7 +494,10 @@
     <!-- Navigation Section End -->
 
     <!-- Main Section start -->
-    <section class="main-section gridviewpadding" style="width: 100%;">
+    <section
+      class="main-section gridviewpadding"
+      style="width: 100%; padding: 15px 65px"
+    >
       <!-- Breadcrumb Section Start -->
       <!-- <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -523,19 +526,101 @@
         <div class="col-md-4 text-right">
           <!-- Form Section start -->
           <div class="col-md-12 col-lg-12">
-            <input type="button" value="Download" class="btn btn-danger m-2" />
-            <input
-              type="button"
-              value="Add"
-              class="btn btn-danger m-2"
+            <!-- <input type="button" value="Download" class="btn btn-danger m-2" /> -->
+            <a href="#" style="color: #61951A;">
+              <?xml version="1.0"?>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1"
+                id="Capa_1"
+                x="0px"
+                y="0px"
+                viewBox="0 0 512 512"
+                style="enable-background:new 0 0 512 512;"
+                xml:space="preserve"
+                width="16px"
+                height="16px"
+              >
+                <g>
+                  <g>
+                    <g>
+                      <path
+                        d="M382.56,233.376C379.968,227.648,374.272,224,368,224h-64V16c0-8.832-7.168-16-16-16h-64c-8.832,0-16,7.168-16,16v208h-64    c-6.272,0-11.968,3.68-14.56,9.376c-2.624,5.728-1.6,12.416,2.528,17.152l112,128c3.04,3.488,7.424,5.472,12.032,5.472    c4.608,0,8.992-2.016,12.032-5.472l112-128C384.192,245.824,385.152,239.104,382.56,233.376z"
+                        data-original="#000000"
+                        class="active-path"
+                        data-old_color="#000000"
+                        fill="#61951A"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M432,352v96H80v-96H16v128c0,17.696,14.336,32,32,32h416c17.696,0,32-14.304,32-32V352H432z"
+                        data-original="#000000"
+                        class="active-path"
+                        data-old_color="#000000"
+                        fill="#61951A"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              Download
+            </a>
+            <a
+              href="#"
               onclick="addRecord()"
-            />
-            <input
-              type="button"
-              value="Filter"
+              style="color: #61951A;"
+              class="ml-3"
+            >
+              <?xml version="1.0"?>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16px"
+                viewBox="0 0 512 512"
+                width="16px"
+              >
+                <g>
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm112 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0"
+                    data-original="#000000"
+                    class="active-path"
+                    data-old_color="#000000"
+                    fill="#61951A"
+                  />
+                </g>
+              </svg>
+              Add
+            </a>
+            <!-- <input type="button" value="Add" class="btn btn-danger m-2" /> -->
+            <a
+              href="#"
               onclick="AddFilter()"
-              class="btn btn-danger m-2"
-            />
+              style="color: #61951A;"
+              class="ml-3"
+            >
+              <?xml version="1.0"?>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16px"
+                viewBox="-5 0 394 394.00003"
+                width="16px"
+              >
+                <g>
+                  <path
+                    d="m367.820312 0h-351.261718c-6.199219-.0117188-11.878906 3.449219-14.710938 8.960938-2.871094 5.585937-2.367187 12.3125 1.300782 17.414062l128.6875 181.285156c.042968.0625.089843.121094.132812.183594 4.675781 6.3125 7.207031 13.960938 7.21875 21.816406v147.800782c-.027344 4.375 1.691406 8.582031 4.773438 11.6875 3.085937 3.101562 7.28125 4.851562 11.65625 4.851562 2.222656-.003906 4.425781-.445312 6.480468-1.300781l72.3125-27.570313c6.476563-1.980468 10.777344-8.09375 10.777344-15.453125v-120.015625c.011719-7.855468 2.542969-15.503906 7.214844-21.816406.042968-.0625.089844-.121094.132812-.183594l128.691406-181.289062c3.667969-5.097656 4.171876-11.820313 1.300782-17.40625-2.828125-5.515625-8.511719-8.9765628-14.707032-8.964844zm0 0"
+                    data-original="#000000"
+                    class="active-path"
+                    data-old_color="#000000"
+                    fill="#61951A"
+                  />
+                </g>
+              </svg>
+              Filter
+            </a>
+            <!-- <input type="button" value="Filter" class="btn btn-danger m-2" /> -->
           </div>
           <!-- Form Section End -->
         </div>
@@ -756,7 +841,8 @@
                       type="text"
                       class="form-control-plaintext"
                       placeholder="Enter Organisation/ bidder"
-                      value="Organisation/ bidder"
+                      value="NTPC"
+                      readonly
                     />
                   </div>
                 </div>
@@ -764,7 +850,7 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
-                    <label>Project developers </label>
+                    <label>Project developer </label>
                   </div>
                 </div>
                 <div class="col-md-1">
@@ -776,7 +862,8 @@
                       type="text"
                       class="form-control-plaintext"
                       placeholder="Enter Project developer"
-                      value="Project developer"
+                      value="NTPC"
+                      readonly
                     />
                   </div>
                 </div>
@@ -784,7 +871,7 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
-                    <label>Current owners </label>
+                    <label>Current owner </label>
                   </div>
                 </div>
                 <div class="col-md-1">
@@ -796,7 +883,8 @@
                       type="text"
                       class="form-control-plaintext"
                       placeholder="Enter Current owner"
-                      value="Current owner"
+                      value="NTPC"
+                      readonly
                     />
                   </div>
                 </div>
@@ -804,7 +892,7 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
-                    <label>Tender/scheme names </label>
+                    <label>Tender/scheme name</label>
                   </div>
                 </div>
                 <div class="col-md-1">
@@ -816,7 +904,8 @@
                       type="text"
                       class="form-control-plaintext"
                       value="Tender/scheme name"
-                      placeholder="Enter Tender/scheme name"
+                      placeholder="	NTPC Andaman and Nicobar 17 MW, Nov-2018"
+                      readonly
                     />
                   </div>
                 </div>
@@ -824,7 +913,7 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
-                    <label>Project location (State)s </label>
+                    <label>Project location (State) </label>
                   </div>
                 </div>
                 <div class="col-md-1">
@@ -836,7 +925,8 @@
                       type="text"
                       class="form-control-plaintext"
                       placeholder="Enter Project location (State)"
-                      value="Project location (State)"
+                      value="Andaman and Nicobar"
+                      readonly
                     />
                   </div>
                 </div>
@@ -844,7 +934,7 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
-                    <label>AC capacity (MW)s </label>
+                    <label>AC capacity (MW) </label>
                   </div>
                 </div>
                 <div class="col-md-1">
@@ -856,7 +946,8 @@
                       type="text"
                       class="form-control-plaintext"
                       placeholder="Enter AC capacity(MW)"
-                      value="AC capacity(MW)"
+                      value="17"
+                      readonly
                     />
                   </div>
                 </div>
@@ -864,7 +955,7 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
-                    <label>Tariif (INR/kWh)s </label>
+                    <label>Tariif (INR/kWh) </label>
                   </div>
                 </div>
                 <div class="col-md-1">
@@ -875,7 +966,8 @@
                     <input
                       type="text"
                       class="form-control-plaintext"
-                      value="Tariif (INR/kWh)"
+                      value="NA"
+                      readonly
                       placeholder="Enter Tariif (INR/kWh)"
                     />
                   </div>
@@ -884,7 +976,7 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
-                    <label>VGF (INR million/ MW)s </label>
+                    <label>VGF (INR million/ MW) </label>
                   </div>
                 </div>
                 <div class="col-md-1">
@@ -895,7 +987,8 @@
                     <input
                       type="text"
                       class="form-control-plaintext"
-                      value="VGF(INR million/ MW)"
+                      value="NA"
+                      readonly
                       placeholder="Enter VGF(INR million/ MW)"
                     />
                   </div>
@@ -916,7 +1009,8 @@
                     <input
                       type="text"
                       class="form-control-plaintext"
-                      value="Project status"
+                      value="Pipeline"
+                      readonly
                       placeholder="Enter Project status"
                     />
                   </div>
@@ -925,7 +1019,7 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
-                    <label>CODs </label>
+                    <label>COD </label>
                   </div>
                 </div>
                 <div class="col-md-1">
@@ -933,7 +1027,11 @@
                 </div>
                 <div class="col-md-4 col-lg-5">
                   <div class="form-group bottomMargin">
-                    <input type="text" class="form-control-plaintext" />
+                    <input
+                      type="text"
+                      readonly
+                      class="form-control-plaintext"
+                    />
                   </div>
                 </div>
               </div>
@@ -953,6 +1051,7 @@
                       type="text"
                       class="form-control-plaintext"
                       placeholder="Enter Auction date"
+                      readonly
                       value="09/11/2018"
                     />
                   </div>
@@ -972,7 +1071,8 @@
                     <input
                       type="text"
                       class="form-control-plaintext"
-                      value="Estimated/ actual PPA signing date"
+                      value="Na"
+                      readonly
                       placeholder="Enter Estimated/ actual PPA signing date"
                     />
                   </div>
@@ -1385,9 +1485,9 @@
                 <div class="form-group bottomMargin">
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control height-css"
                     placeholder="Enter Organisation/ bidder"
-                    value="Organisation/ bidder"
+                    value=""
                   />
                 </div>
               </div>
@@ -1407,9 +1507,9 @@
                 <div class="form-group bottomMargin">
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control height-css"
                     placeholder="Enter Project developer"
-                    value="Project developer"
+                    value=""
                   />
                 </div>
               </div>
@@ -1427,9 +1527,9 @@
                 <div class="form-group bottomMargin">
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control height-css"
                     placeholder="Enter Current owner"
-                    value="Current owner"
+                    value=""
                   />
                 </div>
               </div>
@@ -1449,8 +1549,8 @@
                 <div class="form-group bottomMargin">
                   <input
                     type="text"
-                    class="form-control"
-                    value="Tender/scheme name"
+                    class="form-control height-css"
+                    value=""
                     placeholder="Enter Tender/scheme name"
                   />
                 </div>
@@ -1471,9 +1571,9 @@
                 <div class="form-group bottomMargin">
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control height-css"
                     placeholder="Enter Project location (State)"
-                    value="Project location (State)"
+                    value=""
                   />
                 </div>
               </div>
@@ -1493,9 +1593,9 @@
                 <div class="form-group bottomMargin">
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control height-css"
                     placeholder="Enter AC capacity(MW)"
-                    value="AC capacity(MW)"
+                    value=""
                   />
                 </div>
               </div>
@@ -1515,8 +1615,8 @@
                 <div class="form-group bottomMargin">
                   <input
                     type="text"
-                    class="form-control"
-                    value="Tariif (INR/kWh)"
+                    class="form-control height-css"
+                    value=""
                     placeholder="Enter Tariif (INR/kWh)"
                   />
                 </div>
@@ -1537,8 +1637,8 @@
                 <div class="form-group bottomMargin">
                   <input
                     type="text"
-                    class="form-control"
-                    value="VGF(INR million/ MW)"
+                    class="form-control height-css"
+                    value=""
                     placeholder="Enter VGF(INR million/ MW)"
                   />
                 </div>
@@ -1558,8 +1658,8 @@
                 <div class="form-group bottomMargin">
                   <input
                     type="text"
-                    class="form-control"
-                    value="Project status"
+                    class="form-control height-css"
+                    value=""
                     placeholder="Enter Project status"
                   />
                 </div>
@@ -1578,7 +1678,7 @@
                 <div class="form-group bottomMargin">
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control height-css"
                     placeholder="Enter COD"
                   />
                 </div>
@@ -1598,9 +1698,9 @@
                 <div class="form-group bottomMargin">
                   <input
                     type="text"
-                    class="form-control date"
+                    class="form-control height-css date"
                     placeholder="Enter Auction date"
-                    value="09/11/2018"
+                    value=""
                   />
                 </div>
               </div>
@@ -1622,8 +1722,8 @@
                 <div class="form-group bottomMargin">
                   <input
                     type="text"
-                    class="form-control"
-                    value="Estimated/ actual PPA signing date"
+                    class="form-control height-css"
+                    value=""
                     placeholder="Enter Estimated/ actual PPA signing date"
                   />
                 </div>
@@ -1801,118 +1901,6 @@
           "Estimated/ actual PPA signing date": "08/01/2019"
         },
         {
-          "Organisation/ bidder": "NTPC 1",
-          "Project developer": "NTPC ",
-          "Current owner": "NTPC",
-          "Tender/scheme name": "NTPC Andaman and Nicobar 8 MW, Nov-2018",
-          "Project location (State)": "Andaman and Nicobar",
-          "AC capacity (MW)": "17",
-          "Tariif (INR/kWh)": "NA",
-          "VGF(INR million/ MW)": "NA",
-          "Project status": "Pipeline",
-          COD: "",
-          "Auction date": "09/11/2018",
-          "Estimated/ actual PPA signing date": "08/01/2019"
-        },
-        {
-          "Organisation/ bidder": "NTPC",
-          "Project developer": "NTPC ",
-          "Current owner": "NTPC",
-          "Tender/scheme name": "NTPC Andaman and Nicobar 18 MW, Nov-2018",
-          "Project location (State)": "Andaman and Nicobar",
-          "AC capacity (MW)": "17",
-          "Tariif (INR/kWh)": "NA",
-          "VGF(INR million/ MW)": "NA",
-          "Project status": "Pipeline",
-          COD: "",
-          "Auction date": "09/11/2018",
-          "Estimated/ actual PPA signing date": "08/01/2019"
-        },
-        {
-          "Organisation/ bidder": "NTPC",
-          "Project developer": "NTPC ",
-          "Current owner": "NTPC",
-          "Tender/scheme name": "NTPC Andaman and Nicobar 17 MW, Nov-2018",
-          "Project location (State)": "Andaman and Nicobar",
-          "AC capacity (MW)": "17",
-          "Tariif (INR/kWh)": "NA",
-          "VGF(INR million/ MW)": "NA",
-          "Project status": "Pipeline",
-          COD: "",
-          "Auction date": "09/11/2018",
-          "Estimated/ actual PPA signing date": "08/01/2019"
-        },
-        {
-          "Organisation/ bidder": "NTPC",
-          "Project developer": "NTPC ",
-          "Current owner": "NTPC",
-          "Tender/scheme name": "NTPC Andaman and Nicobar 17 MW, Nov-2018",
-          "Project location (State)": "Andaman and Nicobar",
-          "AC capacity (MW)": "17",
-          "Tariif (INR/kWh)": "NA",
-          "VGF(INR million/ MW)": "NA",
-          "Project status": "Pipeline",
-          COD: "",
-          "Auction date": "09/11/2018",
-          "Estimated/ actual PPA signing date": "08/01/2019"
-        },
-        {
-          "Organisation/ bidder": "NTPC",
-          "Project developer": "NTPC ",
-          "Current owner": "NTPC",
-          "Tender/scheme name": "NTPC Andaman and Nicobar 17 MW, Nov-2018",
-          "Project location (State)": "Andaman and Nicobar",
-          "AC capacity (MW)": "17",
-          "Tariif (INR/kWh)": "NA",
-          "VGF(INR million/ MW)": "NA",
-          "Project status": "Pipeline",
-          COD: "",
-          "Auction date": "09/11/2018",
-          "Estimated/ actual PPA signing date": "08/01/2019"
-        },
-        {
-          "Organisation/ bidder": "NTPC",
-          "Project developer": "NTPC ",
-          "Current owner": "NTPC",
-          "Tender/scheme name": "NTPC Andaman and Nicobar 17 MW, Nov-2018",
-          "Project location (State)": "Andaman and Nicobar",
-          "AC capacity (MW)": "17",
-          "Tariif (INR/kWh)": "NA",
-          "VGF(INR million/ MW)": "NA",
-          "Project status": "Pipeline",
-          COD: "",
-          "Auction date": "09/11/2018",
-          "Estimated/ actual PPA signing date": "08/01/2019"
-        },
-        {
-          "Organisation/ bidder": "NTPC",
-          "Project developer": "NTPC ",
-          "Current owner": "NTPC",
-          "Tender/scheme name": "NTPC Andaman and Nicobar 17 MW, Nov-2018",
-          "Project location (State)": "Andaman and Nicobar",
-          "AC capacity (MW)": "17",
-          "Tariif (INR/kWh)": "NA",
-          "VGF(INR million/ MW)": "NA",
-          "Project status": "Pipeline",
-          COD: "",
-          "Auction date": "09/11/2018",
-          "Estimated/ actual PPA signing date": "08/01/2019"
-        },
-        {
-          "Organisation/ bidder": "NTPC",
-          "Project developer": "NTPC ",
-          "Current owner": "NTPC",
-          "Tender/scheme name": "NTPC Andaman and Nicobar 17 MW, Nov-2018",
-          "Project location (State)": "Andaman and Nicobar",
-          "AC capacity (MW)": "17",
-          "Tariif (INR/kWh)": "NA",
-          "VGF(INR million/ MW)": "NA",
-          "Project status": "Pipeline",
-          COD: "",
-          "Auction date": "09/11/2018",
-          "Estimated/ actual PPA signing date": "08/01/2019"
-        },
-        {
           "Organisation/ bidder": "NTPC",
           "Project developer": "NTPC ",
           "Current owner": "NTPC",
@@ -2037,19 +2025,19 @@
             {
               name: "Organisation/ bidder",
               type: "text",
-              width: 90,
+              width: 150,
               validate: "required"
             },
             {
               name: "Project developer",
               type: "text",
-              width: 90,
+              width: 150,
               title: "Project developer"
             },
             {
               name: "Current owner",
               type: "text",
-              width: 90,
+              width: 120,
               title: "Current owner"
             },
             {
@@ -2062,45 +2050,52 @@
             {
               name: "Project location (State)",
               type: "text",
-              width: 125,
+              width: 195,
               title: "Project location (State)"
             },
             {
               name: "AC capacity (MW)",
-              width: 90,
+              width: 150,
+              align: "right",
               type: "text",
               title: "AC capacity(MW)"
             },
             {
               name: "Tariif (INR/kWh)",
               type: "text",
+              width: 120,
               title: "Tariif (INR/kWh)"
             },
             {
               name: "VGF(INR million/ MW)",
               type: "text",
+              width: 160,
               title: "VGF(INR million / MW)"
             },
 
             {
               name: "Project status",
               type: "text",
+              width: 120,
               title: "Project status"
             },
 
             {
               name: "COD",
               type: "text",
+              width: 100,
               title: "COD"
             },
             {
               name: "Auction date",
               type: "text",
+              width: 120,
               title: "Auction date"
             },
             {
               name: "Estimated/ actual PPA signing date",
               type: "text",
+              width: 160,
               title: "Estimated/ actual PPA signing date"
             }
             //   { type: "control" }
@@ -2134,19 +2129,19 @@
           {
             name: "Organisation/ bidder",
             type: "text",
-            width: 90,
+            width: 150,
             validate: "required"
           },
           {
             name: "Project developer",
             type: "text",
-            width: 90,
+            width: 150,
             title: "Project developer"
           },
           {
             name: "Current owner",
             type: "text",
-            width: 90,
+            width: 120,
             title: "Current owner"
           },
           {
@@ -2159,45 +2154,52 @@
           {
             name: "Project location (State)",
             type: "text",
-            width: 125,
+            width: 195,
             title: "Project location (State)"
           },
           {
             name: "AC capacity (MW)",
-            width: 90,
+            width: 150,
+            align: "right",
             type: "text",
             title: "AC capacity(MW)"
           },
           {
             name: "Tariif (INR/kWh)",
             type: "text",
+            width: 120,
             title: "Tariif (INR/kWh)"
           },
           {
             name: "VGF(INR million/ MW)",
             type: "text",
+            width: 160,
             title: "VGF(INR million / MW)"
           },
 
           {
             name: "Project status",
             type: "text",
+            width: 120,
             title: "Project status"
           },
 
           {
             name: "COD",
             type: "text",
+            width: 100,
             title: "COD"
           },
           {
             name: "Auction date",
             type: "text",
+            width: 120,
             title: "Auction date"
           },
           {
             name: "Estimated/ actual PPA signing date",
             type: "text",
+            width: 160,
             title: "Estimated/ actual PPA signing date"
           }
           //   { type: "control" }

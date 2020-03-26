@@ -25,18 +25,6 @@
     />
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
     <style type="text/css">
-      #page {
-        color: black;
-      }
-
-      #page:hover {
-        color: red;
-      }
-
-      .more:hover {
-        background-color: white !important;
-      }
-
       /* width */
       ::-webkit-scrollbar {
         width: 12px;
@@ -56,7 +44,7 @@
 
       /* Handle on hover */
       ::-webkit-scrollbar-thumb:hover {
-        background: #426304;
+        background: #4e7507;
       }
     </style>
   </head>
@@ -91,15 +79,10 @@
         <div class="col-6 text-right">
           <ul class="list-inline info-list">
             <li class="list-inline-item username">
-              <a href="#">Welcome Shashank!</a>
+              <a href="#">Welcome !</a>
             </li>
             <li class="list-inline-item">
-              <a
-                href="#"
-                data-toggle="tooltip"
-                data-placement="bottom"
-                title="Profile"
-              >
+              <a href="#">
                 <svg
                   x="0px"
                   y="0px"
@@ -112,7 +95,7 @@
                       data-color="color-2"
                       d="M14.5,12.976a1,1,0,0,0-.426-.82A10.367,10.367,0,0,0,8,10.5a10.367,10.367,0,0,0-6.074,1.656,1,1,0,0,0-.426.82V15.5h13Z"
                       fill="none"
-                      stroke="#61951a"
+                      stroke="#69951a"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     ></path>
@@ -121,7 +104,7 @@
                       cy="4"
                       r="3.5"
                       fill="none"
-                      stroke="#61951a"
+                      stroke="#69951a"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     ></circle>
@@ -129,13 +112,9 @@
                 </svg>
               </a>
             </li>
+
             <li class="list-inline-item notifications">
-              <a
-                href="#"
-                data-toggle="tooltip"
-                data-placement="bottom"
-                title="Notifications"
-              >
+              <a href="#">
                 <svg
                   x="0px"
                   y="0px"
@@ -147,7 +126,7 @@
                     <path
                       data-color="color-2"
                       fill="none"
-                      stroke="#61951a"
+                      stroke="#69951a"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                       stroke-miterlimit="10"
@@ -155,7 +134,7 @@
                     ></path>
                     <line
                       fill="none"
-                      stroke="#61951a"
+                      stroke="#69951a"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                       stroke-miterlimit="10"
@@ -166,7 +145,7 @@
                     ></line>
                     <path
                       fill="none"
-                      stroke="#61951a"
+                      stroke="#69951a"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                       stroke-miterlimit="10"
@@ -180,10 +159,7 @@
         </div>
       </div>
     </header>
-    <!-- Header section end -->
-
-    <!-- Navigation Section start -->
-    <section class="nav-section">
+    <section class="nav-section" style="overflow-y: auto;overflow-x: hidden">
       <ul class="list-unstyled">
         <li>
           <a href="../Category/categoryList.html">
@@ -451,149 +427,174 @@
         </li>
       </ul>
     </section>
-    <!-- Navigation Section End -->
     <section class="main-section">
       <!-- Breadcrumb Section Start -->
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="">Home</a>
+            <a href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="list.html">Web Page Config List</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
-            Tracker List
+            View
           </li>
         </ol>
       </nav>
       <!-- Breadcrumb Section End -->
-      <div class="row align-items-center no-gutters">
-        <div class="col-md-6">
-          <h1 class="heading m-b-0">Tender Tracker List</h1>
-        </div>
-        <div class="col-md-6 text-right">
-          <a href="add.html" class="btn btn-danger">Add </a>
+      <h1 class="heading m-b-25">Web Page Config</h1>
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <!-- Form Section start -->
+          <div class="box-card">
+            <div class="row">
+              <div class="col-md-4 col-lg-3">
+                <div class="form-group">
+                  <label>SITE NAME</label>
+                  <input
+                    type="text"
+                    class="form-control-plaintext"
+                    readonly
+                    value="Ministry of New and Renewable Energy"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3">
+                <div class="form-group">
+                  <label>SITE URL</label>
+                  <input
+                    class="form-control-plaintext"
+                    readonly
+                    value="https://mnre.gov.in/"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3">
+                <div class="form-group">
+                  <label>NO OF LINES</label>
+                  <input class="form-control-plaintext" readonly value="10" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-lg-3">
+                <div class="form-group">
+                  <label>START FROM</label>
+                  <input
+                    class="form-control-plaintext"
+                    value="Do date"
+                    readonly
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3">
+                <div class="form-group">
+                  <label>END With</label>
+                  <input
+                    class="form-control-plaintext"
+                    value="COVID -19 Out Break"
+                    readonly
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3">
+                <div class="form-group">
+                  <label>SEARCH TAG</label>
+                  <input
+                    type="text"
+                    class="form-control-plaintext "
+                    value="Bangalore"
+                    readonly
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <div class="form-group">
+                  <label> Created BY </label>
+                  <input
+                    type="text"
+                    readonly
+                    class="form-control-plaintext "
+                    value="pkchoudhary1211@gmail.com"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="form-group">
+                  <label>Created ON</label>
+                  <input
+                    type="text"
+                    readonly
+                    class="form-control-plaintext "
+                    value="02/01/2020 10:30"
+                  />
+                </div>
+              </div>
+
+              <div class="col-md-3 col-lg-3">
+                <div class="form-group">
+                  <label> LAST MODIFIED BY </label>
+                  <input
+                    type="text"
+                    readonly
+                    class="form-control-plaintext "
+                    value="pkchoudhary1211@gmail.com"
+                  />
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="form-group">
+                  <label>LAST MODIFIED ON</label>
+                  <input
+                    type="text"
+                    readonly
+                    class="form-control-plaintext "
+                    value="02/01/2020 10:30"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="form-group">
+                  <label> Status </label>
+                  <input
+                    type="text"
+                    readonly
+                    class="form-control-plaintext "
+                    value="Active"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 col-lg-5">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  onclick="myFunction()"
+                >
+                  Edit
+                </button>
+                <button type="button" class="btn btn-light m-l-50">
+                  Clear
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- Table Section Start -->
-      <div class="table-responsive">
-        <table class="table table-style-1 m-t-35">
-          <thead>
-            <tr>
-              <th scope="col">ID</th>
-              <th scope="col">DESCRIPTION</th>
-              <th scope="col">SOURCE DATA GRID</th>
-              <th scope="col" class="">TARGET DATA GRID</th>
-              <th scope="col" class="">ACTION(s)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>101</td>
-              <td>This is Description</td>
-              <td>Solar Grid</td>
-              <td>History Data Grid</td>
-              <td>
-                <a href="view.html" class="link-primary" title="View">
-                  <svg
-                    x="0px"
-                    y="0px"
-                    width="16px"
-                    height="16px"
-                    viewBox="0 0 16 16"
-                  >
-                    <g transform="translate(0, 0)">
-                      <line
-                        fill="none"
-                        stroke="#61951a"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-miterlimit="10"
-                        x1="4.5"
-                        y1="11.5"
-                        x2="11.5"
-                        y2="11.5"
-                        data-color="color-2"
-                      ></line>
-                      <line
-                        fill="none"
-                        stroke="#61951a"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-miterlimit="10"
-                        x1="4.5"
-                        y1="8.5"
-                        x2="11.5"
-                        y2="8.5"
-                        data-color="color-2"
-                      ></line>
-                      <line
-                        fill="none"
-                        stroke="#61951a"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-miterlimit="10"
-                        x1="4.5"
-                        y1="5.5"
-                        x2="6.5"
-                        y2="5.5"
-                        data-color="color-2"
-                      ></line>
-                      <polygon
-                        fill="none"
-                        stroke="#61951a"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-miterlimit="10"
-                        points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5
-                                                14.5,5.5"
-                      ></polygon>
-                      <polyline
-                        fill="none"
-                        stroke="#61951a"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-miterlimit="10"
-                        points="9.5,0.5 9.5,5.5 14.5,5.5"
-                      ></polyline>
-                    </g>
-                  </svg>
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Table Section End -->
-
-      <!-- Pagination Start -->
-
-      <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center pagination-style-1">
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous" id="page"
-              >&laquo; Previous
-            </a>
-          </li>
-
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next" id="page">
-              Next &raquo;
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Pagination End -->
+      <!-- Payment Section End -->
     </section>
-
     <!-- Notifications Section start -->
-
     <section class="notifications-section">
       <div class="notifications-heading">
         Notifications
 
         <a href="javascript:void(0)" class="float-right notifications-close">
-          <img src="../../images/close-icon.png" />
+          <img src="../images/close-icon.png" />
         </a>
       </div>
       <ul
@@ -602,61 +603,61 @@
       >
         <li>
           <a href="#">
-            Welcome to Ayana Renewable Power
+            Welcome to Ayana
             <small>18-04-2019 12:00 </small>
           </a>
         </li>
         <li>
           <a href="#">
-            Welcome to Ayana Renewable Power
+            Welcome to Ayana
             <small>18-04-2019 12:00 </small>
           </a>
         </li>
         <li>
           <a href="#">
-            Welcome to Ayana Renewable Power
+            Welcome to Ayana
             <small>18-04-2019 12:00 </small>
           </a>
         </li>
         <li>
           <a href="#">
-            Welcome to Ayana Renewable Power
+            Welcome to Ayana
             <small>18-04-2019 12:00 </small>
           </a>
         </li>
         <li>
           <a href="#">
-            Welcome to Ayana Renewable Power
+            Welcome to Ayana
             <small>18-04-2019 12:00 </small>
           </a>
         </li>
         <li>
           <a href="#">
-            Welcome to Ayana Renewable Power
+            Welcome to Ayana
             <small>18-04-2019 12:00 </small>
           </a>
         </li>
         <li>
           <a href="#">
-            Welcome to Ayana Renewable Power
+            Welcome to Ayana
             <small>18-04-2019 12:00 </small>
           </a>
         </li>
         <li>
           <a href="#">
-            Welcome to Ayana Renewable Power
+            Welcome to Ayana
             <small>18-04-2019 12:00 </small>
           </a>
         </li>
         <li>
           <a href="#">
-            Welcome to Ayana Renewable Power
+            Welcome to Ayana
             <small>18-04-2019 12:00 </small>
           </a>
         </li>
         <li>
           <a href="#">
-            Welcome to Ayana Renewable Power
+            Welcome to Ayana
             <small>18-04-2019 12:00 </small>
           </a>
         </li>
@@ -669,14 +670,20 @@
     </section>
 
     <!-- Notifications Section End -->
-    <!-- Script files -->
     <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"
     ></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/popper.min.js"></script>
+
+    <script>
+      function myFunction() {
+        location.replace("list.html");
+      }
+    </script>
 
     <script>
       $(".menu-icon").click(function() {
@@ -687,9 +694,7 @@
       $(".notifications, .notifications-close").click(function() {
         $(".notifications-section").toggleClass("expand");
       });
-      $(".filter-btn").click(function() {
-        $(".filter-popup").slideToggle();
-      });
+
       $(document).ready(function() {
         var date_input = $(".date"); //our date input has the name "date"
         var container =
@@ -703,6 +708,32 @@
           autoclose: true
         });
       });
+    </script>
+    <script>
+      function showDiv() {
+        document.getElementById("addDiv").style.display = "block";
+        document.getElementById("showlistDiv").style.display = "none";
+      }
+      function closeDiv() {
+        document.getElementById("addDiv").style.display = "none";
+        document.getElementById("showlistDiv").style.display = "block";
+      }
+      function showDiv1() {
+        document.getElementById("addDiv1").style.display = "block";
+        document.getElementById("showlistDiv1").style.display = "none";
+      }
+      function closeDiv1() {
+        document.getElementById("addDiv1").style.display = "none";
+        document.getElementById("showlistDiv1").style.display = "block";
+      }
+      function showDiv2() {
+        document.getElementById("addDiv2").style.display = "block";
+        document.getElementById("showlistDiv2").style.display = "none";
+      }
+      function closeDiv2() {
+        document.getElementById("addDiv2").style.display = "none";
+        document.getElementById("showlistDiv2").style.display = "block";
+      }
     </script>
   </body>
 </html>

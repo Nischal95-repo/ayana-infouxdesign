@@ -10,6 +10,25 @@
   height: 550px;
   overflow-x: hidden;
 }
+.bottomMargin {
+  margin-bottom: 10px !important;
+}
+/* .jsgrid-alt-row {
+  border-width: 2px !important;
+  border-style: solid !important;
+}
+.jsgrid-row {
+  border-width: 2px !important;
+  border-style: solid !important;
+} */
+.jsgrid-cell {
+  border-width: 2px !important;
+  border-style: inset !important;
+}
+.jsgrid-header-cell {
+  border-width: 2px !important;
+  border-style: inset !important;
+}
 @font-face {
   font-family: "Rubik";
   src: url("../fonts/Rubik-BoldItalic.eot");
@@ -1319,7 +1338,9 @@ textarea.form-control {
   overflow: hidden;
   display: inline-block;
 }
-
+.height-css {
+  height: 35px !important;
+}
 /* .upload-btn-wrapper a {
   border: none;
   color: gray;
