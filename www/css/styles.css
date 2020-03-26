@@ -536,7 +536,7 @@ header .info-list li.username a:hover {
   width: auto;
   visibility: visible;
   display: inline;
-  margin-left: 15px;
+  margin-left: 5px;
   transition: all ease-in 0.25s;
   transition-delay: 0.15s;
 }
