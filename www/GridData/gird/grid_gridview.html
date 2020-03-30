@@ -473,7 +473,7 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="#">Home</a>
+            <a href="../../home.html">Home</a>
           </li>
           <li class="breadcrumb-item">
             <a href="grid_gridlist.html">Grid List </a>
@@ -490,7 +490,7 @@
           <!-- Form Section start -->
           <div class="box-card">
             <div class="row">
-              <div class="col-md-2 col-lg-2">
+              <div class="col-md-2 col-lg-3">
                 <div class="form-group">
                   <label> ID</label>
                   <input
@@ -508,13 +508,13 @@
                     type="text"
                     readonly
                     class="form-control-plaintext "
-                    value="Employee Grid"
+                    value="Solar - Grid"
                   />
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-4 col-lg-6">
+              <div class="col-md-4 col-lg-8">
                 <div class="form-group">
                   <label> Description</label>
                   <textarea readonly class="form-control-plaintext ">
@@ -524,7 +524,7 @@ Defines the columns and rows of the grid with a space-separated list of values. 
               </div>
             </div>
             <div class="row">
-              <div class="col-md-2 col-lg-2">
+              <div class="col-md-2 col-lg-3">
                 <div class="form-group">
                   <label> Created BY </label>
                   <input
@@ -570,7 +570,7 @@ Defines the columns and rows of the grid with a space-separated list of values. 
                   />
                 </div>
               </div>
-              <div class="col-md-1 col-lg-1"></div>
+
               <div class="col-md-6 col-lg-3">
                 <div class="form-group">
                   <label> Status </label>
@@ -623,7 +623,7 @@ Defines the columns and rows of the grid with a space-separated list of values. 
             role="tab"
             aria-controls="employee"
             aria-selected="false"
-            ><span>Employees</span></a
+            ><span>Employees (For Edit) </span></a
           >
         </div>
         <div class="tab-content" id="v-pills-tabContent">
@@ -703,7 +703,7 @@ Defines the columns and rows of the grid with a space-separated list of values. 
 
                 <!-- Table Section Start -->
                 <div class="columndetails" id="columnDetails">
-                  <div class="table-responsive">
+                  <div class="table-responsive tableHeight tableHeight">
                     <table class="table table-style-1" id="myTable">
                       <thead>
                         <tr>
@@ -716,7 +716,7 @@ Defines the columns and rows of the grid with a space-separated list of values. 
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Solar Bid Grid</td>
+                          <td>Organisation/ Bidder</td>
                           <td>String</td>
                           <td>120px</td>
                           <td>Left</td>
@@ -843,7 +843,7 @@ Defines the columns and rows of the grid with a space-separated list of values. 
                           </td>
                         </tr>
                         <tr>
-                          <td>History grid</td>
+                          <td>Project Developer</td>
                           <td>String</td>
                           <td>120px</td>
                           <td>Left</td>
@@ -930,42 +930,903 @@ Defines the columns and rows of the grid with a space-separated list of values. 
                                 </g>
                               </svg>
                             </a>
-                            <a href="#" class="ml-3" onclick="viewEditForm()">
-                              <?xml version="1.0"?>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Current Owner</td>
+                          <td>String</td>
+                          <td>150px</td>
+                          <td>Left</td>
+                          <td>
+                            <a
+                              href="#"
+                              class="link-delete m-l-45"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="Delete"
+                            >
                               <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                version="1.1"
-                                id="Capa_1"
                                 x="0px"
                                 y="0px"
-                                viewBox="0 0 383.947 383.947"
-                                style="enable-background:new 0 0 383.947 383.947;"
-                                xml:space="preserve"
                                 width="16px"
                                 height="16px"
+                                viewBox="0 0 16 16"
                               >
-                                <g>
-                                  <g>
-                                    <g>
-                                      <g>
-                                        <polygon
-                                          points="0,303.947 0,383.947 80,383.947 316.053,147.893 236.053,67.893    "
-                                          data-original="#000000"
-                                          class="active-path"
-                                          data-old_color="#000000"
-                                          fill="#61951A"
-                                        />
-                                        <path
-                                          d="M377.707,56.053L327.893,6.24c-8.32-8.32-21.867-8.32-30.187,0l-39.04,39.04l80,80l39.04-39.04     C386.027,77.92,386.027,64.373,377.707,56.053z"
-                                          data-original="#000000"
-                                          class="active-path"
-                                          data-old_color="#000000"
-                                          fill="#61951A"
-                                        />
-                                      </g>
-                                    </g>
-                                  </g>
+                                <g transform="translate(0, 0)">
+                                  <path
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    d="M2.5,6.5v7
+                                                                                                            c0,1.105,0.895,2,2,2h8c1.105,0,2-0.895,2-2v-7"
+                                  ></path>
+                                  <line
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="1.5"
+                                    y1="3.5"
+                                    x2="15.5"
+                                    y2="3.5"
+                                  ></line>
+                                  <polyline
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    points="6.5,3.5 6.5,0.5 10.5,0.5
+                                                                                                            10.5,3.5"
+                                  ></polyline>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="8.5"
+                                    y1="7.5"
+                                    x2="8.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="11.5"
+                                    y1="7.5"
+                                    x2="11.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="5.5"
+                                    y1="7.5"
+                                    x2="5.5"
+                                    y2="12.5"
+                                  ></line>
+                                </g>
+                              </svg>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Tender/scheme Name</td>
+                          <td>String</td>
+                          <td>200px</td>
+                          <td>Left</td>
+                          <td>
+                            <a
+                              href="#"
+                              class="link-delete m-l-45"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="Delete"
+                            >
+                              <svg
+                                x="0px"
+                                y="0px"
+                                width="16px"
+                                height="16px"
+                                viewBox="0 0 16 16"
+                              >
+                                <g transform="translate(0, 0)">
+                                  <path
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    d="M2.5,6.5v7
+                                                                                                                                    c0,1.105,0.895,2,2,2h8c1.105,0,2-0.895,2-2v-7"
+                                  ></path>
+                                  <line
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="1.5"
+                                    y1="3.5"
+                                    x2="15.5"
+                                    y2="3.5"
+                                  ></line>
+                                  <polyline
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    points="6.5,3.5 6.5,0.5 10.5,0.5
+                                                                                                                                    10.5,3.5"
+                                  ></polyline>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="8.5"
+                                    y1="7.5"
+                                    x2="8.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="11.5"
+                                    y1="7.5"
+                                    x2="11.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="5.5"
+                                    y1="7.5"
+                                    x2="5.5"
+                                    y2="12.5"
+                                  ></line>
+                                </g>
+                              </svg>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Project Location (State)</td>
+                          <td>String</td>
+                          <td>180px</td>
+                          <td>Left</td>
+                          <td>
+                            <a
+                              href="#"
+                              class="link-delete m-l-45"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="Delete"
+                            >
+                              <svg
+                                x="0px"
+                                y="0px"
+                                width="16px"
+                                height="16px"
+                                viewBox="0 0 16 16"
+                              >
+                                <g transform="translate(0, 0)">
+                                  <path
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    d="M2.5,6.5v7
+                                                                                                                                                            c0,1.105,0.895,2,2,2h8c1.105,0,2-0.895,2-2v-7"
+                                  ></path>
+                                  <line
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="1.5"
+                                    y1="3.5"
+                                    x2="15.5"
+                                    y2="3.5"
+                                  ></line>
+                                  <polyline
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    points="6.5,3.5 6.5,0.5 10.5,0.5
+                                                                                                                                                            10.5,3.5"
+                                  ></polyline>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="8.5"
+                                    y1="7.5"
+                                    x2="8.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="11.5"
+                                    y1="7.5"
+                                    x2="11.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="5.5"
+                                    y1="7.5"
+                                    x2="5.5"
+                                    y2="12.5"
+                                  ></line>
+                                </g>
+                              </svg>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>AC Capacity(MW)</td>
+                          <td>Int</td>
+                          <td>120px</td>
+                          <td>Right</td>
+                          <td>
+                            <a
+                              href="#"
+                              class="link-delete m-l-45"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="Delete"
+                            >
+                              <svg
+                                x="0px"
+                                y="0px"
+                                width="16px"
+                                height="16px"
+                                viewBox="0 0 16 16"
+                              >
+                                <g transform="translate(0, 0)">
+                                  <path
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    d="M2.5,6.5v7
+                                                                                                                                                                                    c0,1.105,0.895,2,2,2h8c1.105,0,2-0.895,2-2v-7"
+                                  ></path>
+                                  <line
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="1.5"
+                                    y1="3.5"
+                                    x2="15.5"
+                                    y2="3.5"
+                                  ></line>
+                                  <polyline
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    points="6.5,3.5 6.5,0.5 10.5,0.5
+                                                                                                                                                                                    10.5,3.5"
+                                  ></polyline>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="8.5"
+                                    y1="7.5"
+                                    x2="8.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="11.5"
+                                    y1="7.5"
+                                    x2="11.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="5.5"
+                                    y1="7.5"
+                                    x2="5.5"
+                                    y2="12.5"
+                                  ></line>
+                                </g>
+                              </svg>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Tariif (INR/kWh)</td>
+                          <td>String</td>
+                          <td>100px</td>
+                          <td>Left</td>
+                          <td>
+                            <a
+                              href="#"
+                              class="link-delete m-l-45"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="Delete"
+                            >
+                              <svg
+                                x="0px"
+                                y="0px"
+                                width="16px"
+                                height="16px"
+                                viewBox="0 0 16 16"
+                              >
+                                <g transform="translate(0, 0)">
+                                  <path
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    d="M2.5,6.5v7
+                                                                                                                                                                                                            c0,1.105,0.895,2,2,2h8c1.105,0,2-0.895,2-2v-7"
+                                  ></path>
+                                  <line
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="1.5"
+                                    y1="3.5"
+                                    x2="15.5"
+                                    y2="3.5"
+                                  ></line>
+                                  <polyline
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    points="6.5,3.5 6.5,0.5 10.5,0.5
+                                                                                                                                                                                                            10.5,3.5"
+                                  ></polyline>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="8.5"
+                                    y1="7.5"
+                                    x2="8.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="11.5"
+                                    y1="7.5"
+                                    x2="11.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="5.5"
+                                    y1="7.5"
+                                    x2="5.5"
+                                    y2="12.5"
+                                  ></line>
+                                </g>
+                              </svg>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>VGF(INR Million / MW)</td>
+                          <td>String</td>
+                          <td>150px</td>
+                          <td>Left</td>
+                          <td>
+                            <a
+                              href="#"
+                              class="link-delete m-l-45"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="Delete"
+                            >
+                              <svg
+                                x="0px"
+                                y="0px"
+                                width="16px"
+                                height="16px"
+                                viewBox="0 0 16 16"
+                              >
+                                <g transform="translate(0, 0)">
+                                  <path
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    d="M2.5,6.5v7
+                                                                                                                                                                                                                                    c0,1.105,0.895,2,2,2h8c1.105,0,2-0.895,2-2v-7"
+                                  ></path>
+                                  <line
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="1.5"
+                                    y1="3.5"
+                                    x2="15.5"
+                                    y2="3.5"
+                                  ></line>
+                                  <polyline
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    points="6.5,3.5 6.5,0.5 10.5,0.5
+                                                                                                                                                                                                                                    10.5,3.5"
+                                  ></polyline>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="8.5"
+                                    y1="7.5"
+                                    x2="8.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="11.5"
+                                    y1="7.5"
+                                    x2="11.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="5.5"
+                                    y1="7.5"
+                                    x2="5.5"
+                                    y2="12.5"
+                                  ></line>
+                                </g>
+                              </svg>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Project Status</td>
+                          <td>String</td>
+                          <td>100px</td>
+                          <td>Left</td>
+                          <td>
+                            <a
+                              href="#"
+                              class="link-delete m-l-45"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="Delete"
+                            >
+                              <svg
+                                x="0px"
+                                y="0px"
+                                width="16px"
+                                height="16px"
+                                viewBox="0 0 16 16"
+                              >
+                                <g transform="translate(0, 0)">
+                                  <path
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    d="M2.5,6.5v7
+                                                                                                                                                                                                                                                            c0,1.105,0.895,2,2,2h8c1.105,0,2-0.895,2-2v-7"
+                                  ></path>
+                                  <line
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="1.5"
+                                    y1="3.5"
+                                    x2="15.5"
+                                    y2="3.5"
+                                  ></line>
+                                  <polyline
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    points="6.5,3.5 6.5,0.5 10.5,0.5
+                                                                                                                                                                                                                                                            10.5,3.5"
+                                  ></polyline>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="8.5"
+                                    y1="7.5"
+                                    x2="8.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="11.5"
+                                    y1="7.5"
+                                    x2="11.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="5.5"
+                                    y1="7.5"
+                                    x2="5.5"
+                                    y2="12.5"
+                                  ></line>
+                                </g>
+                              </svg>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>COD</td>
+                          <td>String</td>
+                          <td>100px</td>
+                          <td>Left</td>
+                          <td>
+                            <a
+                              href="#"
+                              class="link-delete m-l-45"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="Delete"
+                            >
+                              <svg
+                                x="0px"
+                                y="0px"
+                                width="16px"
+                                height="16px"
+                                viewBox="0 0 16 16"
+                              >
+                                <g transform="translate(0, 0)">
+                                  <path
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    d="M2.5,6.5v7
+                                                                                                                                                                                                                                                                                    c0,1.105,0.895,2,2,2h8c1.105,0,2-0.895,2-2v-7"
+                                  ></path>
+                                  <line
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="1.5"
+                                    y1="3.5"
+                                    x2="15.5"
+                                    y2="3.5"
+                                  ></line>
+                                  <polyline
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    points="6.5,3.5 6.5,0.5 10.5,0.5
+                                                                                                                                                                                                                                                                                    10.5,3.5"
+                                  ></polyline>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="8.5"
+                                    y1="7.5"
+                                    x2="8.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="11.5"
+                                    y1="7.5"
+                                    x2="11.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="5.5"
+                                    y1="7.5"
+                                    x2="5.5"
+                                    y2="12.5"
+                                  ></line>
+                                </g>
+                              </svg>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Auction Date</td>
+                          <td>String</td>
+                          <td>100px</td>
+                          <td>Left</td>
+                          <td>
+                            <a
+                              href="#"
+                              class="link-delete m-l-45"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="Delete"
+                            >
+                              <svg
+                                x="0px"
+                                y="0px"
+                                width="16px"
+                                height="16px"
+                                viewBox="0 0 16 16"
+                              >
+                                <g transform="translate(0, 0)">
+                                  <path
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    d="M2.5,6.5v7
+                                                                                                                                                                                                                                                                                                            c0,1.105,0.895,2,2,2h8c1.105,0,2-0.895,2-2v-7"
+                                  ></path>
+                                  <line
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="1.5"
+                                    y1="3.5"
+                                    x2="15.5"
+                                    y2="3.5"
+                                  ></line>
+                                  <polyline
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    points="6.5,3.5 6.5,0.5 10.5,0.5
+                                                                                                                                                                                                                                                                                                            10.5,3.5"
+                                  ></polyline>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="8.5"
+                                    y1="7.5"
+                                    x2="8.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="11.5"
+                                    y1="7.5"
+                                    x2="11.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="5.5"
+                                    y1="7.5"
+                                    x2="5.5"
+                                    y2="12.5"
+                                  ></line>
+                                </g>
+                              </svg>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Estimated/ Actual PPA Signing Date</td>
+                          <td>String</td>
+                          <td>120px</td>
+                          <td>Left</td>
+                          <td>
+                            <a
+                              href="#"
+                              class="link-delete m-l-45"
+                              data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="Delete"
+                            >
+                              <svg
+                                x="0px"
+                                y="0px"
+                                width="16px"
+                                height="16px"
+                                viewBox="0 0 16 16"
+                              >
+                                <g transform="translate(0, 0)">
+                                  <path
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    d="M2.5,6.5v7
+                                                                                                                                                                                                                                                                                                                                    c0,1.105,0.895,2,2,2h8c1.105,0,2-0.895,2-2v-7"
+                                  ></path>
+                                  <line
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="1.5"
+                                    y1="3.5"
+                                    x2="15.5"
+                                    y2="3.5"
+                                  ></line>
+                                  <polyline
+                                    data-color="color-2"
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    points="6.5,3.5 6.5,0.5 10.5,0.5
+                                                                                                                                                                                                                                                                                                                                    10.5,3.5"
+                                  ></polyline>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="8.5"
+                                    y1="7.5"
+                                    x2="8.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="11.5"
+                                    y1="7.5"
+                                    x2="11.5"
+                                    y2="12.5"
+                                  ></line>
+                                  <line
+                                    fill="none"
+                                    stroke="#61951a"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    x1="5.5"
+                                    y1="7.5"
+                                    x2="5.5"
+                                    y2="12.5"
+                                  ></line>
                                 </g>
                               </svg>
                             </a>
@@ -1378,7 +2239,7 @@ Defines the columns and rows of the grid with a space-separated list of values. 
 
                 <!-- Table Section Start -->
                 <div class="columndetails" id="columnDetails">
-                  <div class="table-responsive">
+                  <div class="table-responsive tableHeight">
                     <table class="table table-style-1" id="myTable">
                       <thead>
                         <tr>
@@ -1479,9 +2340,9 @@ Defines the columns and rows of the grid with a space-separated list of values. 
                           </td>
                         </tr>
                         <tr>
-                          <td>1</td>
-                          <td>Prakash</td>
-                          <td>prakash@gmail.com</td>
+                          <td>12</td>
+                          <td>Ujjwal</td>
+                          <td>ujjwal@gmail.com</td>
 
                           <td>
                             <a

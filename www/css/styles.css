@@ -21,6 +21,13 @@
   border-width: 2px !important;
   border-style: solid !important;
 } */
+.tableHeight {
+  height: 515px;
+}
+.Girdheadercss {
+  width: 100%;
+  overflow-x: scroll !important;
+}
 .jsgrid-cell {
   border-width: 2px !important;
   border-style: inset !important;

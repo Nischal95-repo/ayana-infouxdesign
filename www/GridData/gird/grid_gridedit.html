@@ -513,21 +513,21 @@
         </ol>
       </nav> -->
       <!-- Breadcrumb Section End -->
-      <h1 class="heading m-b-25">Solar -Bits</h1>
+      <h1 class="heading m-b-25">Solar - Grid</h1>
       <div class="row">
         <div class="col-md-8  text-left">
           <h5 style="display: inline-block;">Description:</h5>
           <span class="ml-2 sub_heading_style">
-            Well it does kind of look different. Doesn’t it? And if we slapped
-            some margin onto the CSS Grid it would look just like the table. And
-            I guess that’s nice.</span
+            Defines the columns and rows of the grid with a space-separated list
+            of values. The values represent the track size, andthe space between
+            them represents the grid line.</span
           >
         </div>
         <div class="col-md-4 text-right">
           <!-- Form Section start -->
-          <div class="col-md-12 col-lg-12">
+          <div class="col-md-12 col-lg-12 " style="margin-top: 14px;">
             <!-- <input type="button" value="Download" class="btn btn-danger m-2" /> -->
-            <a href="#" style="color: #61951A;">
+            <a href="#" style="color: #61951A;" title="Download">
               <?xml version="1.0"?>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -539,8 +539,8 @@
                 viewBox="0 0 512 512"
                 style="enable-background:new 0 0 512 512;"
                 xml:space="preserve"
-                width="16px"
-                height="16px"
+                width="18px"
+                height="18px"
               >
                 <g>
                   <g>
@@ -567,20 +567,20 @@
                   </g>
                 </g>
               </svg>
-              Download
             </a>
             <a
               href="#"
               onclick="addRecord()"
               style="color: #61951A;"
               class="ml-3"
+              title="Add"
             >
               <?xml version="1.0"?>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                height="16px"
+                height="18px"
                 viewBox="0 0 512 512"
-                width="16px"
+                width="18px"
               >
                 <g>
                   <path
@@ -592,7 +592,6 @@
                   />
                 </g>
               </svg>
-              Add
             </a>
             <!-- <input type="button" value="Add" class="btn btn-danger m-2" /> -->
             <a
@@ -600,13 +599,14 @@
               onclick="AddFilter()"
               style="color: #61951A;"
               class="ml-3"
+              title="Filter"
             >
               <?xml version="1.0"?>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                height="16px"
+                height="18px"
                 viewBox="-5 0 394 394.00003"
-                width="16px"
+                width="18px"
               >
                 <g>
                   <path
@@ -618,7 +618,6 @@
                   />
                 </g>
               </svg>
-              Filter
             </a>
             <!-- <input type="button" value="Filter" class="btn btn-danger m-2" /> -->
           </div>
@@ -829,7 +828,7 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
-                    <label>Organisation/ bidders </label>
+                    <label>Organisation/ bidder </label>
                   </div>
                 </div>
                 <div class="col-md-1">
@@ -998,7 +997,7 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
-                    <label>Project statuss </label>
+                    <label>Project status </label>
                   </div>
                 </div>
                 <div class="col-md-1">
@@ -1039,7 +1038,7 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
-                    <label>Auction dates </label>
+                    <label>Auction date </label>
                   </div>
                 </div>
                 <div class="col-md-1">
@@ -1100,7 +1099,7 @@
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
                     <label
-                      >Organisation/ bidders <span style="color:red">*</span>
+                      >Organisation/ bidder <span style="color:red">*</span>
                     </label>
                   </div>
                 </div>
@@ -1122,8 +1121,7 @@
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
                     <label
-                      >Project developers
-                      <span style="color:red">*</span></label
+                      >Project developer <span style="color:red">*</span></label
                     >
                   </div>
                 </div>
@@ -1145,7 +1143,7 @@
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
                     <label
-                      >Current owners <span style="color:red">*</span>
+                      >Current owner <span style="color:red">*</span>
                     </label>
                   </div>
                 </div>
@@ -1167,7 +1165,7 @@
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
                     <label
-                      >Tender/scheme names <span style="color:red">*</span>
+                      >Tender/scheme name <span style="color:red">*</span>
                     </label>
                   </div>
                 </div>
@@ -1189,7 +1187,7 @@
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
                     <label
-                      >Project location (State)s
+                      >Project location (State)
                       <span style="color:red">*</span></label
                     >
                   </div>
@@ -1212,7 +1210,7 @@
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
                     <label
-                      >AC capacity (MW)s <span style="color:red">*</span></label
+                      >AC capacity (MW) <span style="color:red">*</span></label
                     >
                   </div>
                 </div>
@@ -1234,7 +1232,7 @@
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
                     <label
-                      >Tariif (INR/kWh)s<span style="color:red">*</span>
+                      >Tariif (INR/kWh)<span style="color:red">*</span>
                     </label>
                   </div>
                 </div>
@@ -1256,7 +1254,7 @@
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
                     <label
-                      >VGF (INR million/ MW)s <span style="color:red">*</span>
+                      >VGF (INR million/ MW) <span style="color:red">*</span>
                     </label>
                   </div>
                 </div>
@@ -1278,7 +1276,7 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
-                    <label>Project statuss </label>
+                    <label>Project status </label>
                   </div>
                 </div>
                 <div class="col-md-1">
@@ -1298,7 +1296,7 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
-                    <label>CODs </label>
+                    <label>COD </label>
                   </div>
                 </div>
                 <div class="col-md-1">
@@ -1314,7 +1312,7 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group bottomMargin">
-                    <label>Auction dates </label>
+                    <label>Auction date </label>
                   </div>
                 </div>
                 <div class="col-md-1">
@@ -1474,7 +1472,7 @@
               <div class="col-md-4">
                 <div class="form-group bottomMargin">
                   <label
-                    >Organisation/ bidders <span style="color:red">*</span>
+                    >Organisation/ bidder <span style="color:red">*</span>
                   </label>
                 </div>
               </div>
@@ -1496,7 +1494,7 @@
               <div class="col-md-4">
                 <div class="form-group bottomMargin">
                   <label
-                    >Project developers <span style="color:red">*</span></label
+                    >Project developer <span style="color:red">*</span></label
                   >
                 </div>
               </div>
@@ -2026,39 +2024,40 @@
               name: "Organisation/ bidder",
               type: "text",
               width: 150,
+              title: "Organisation/ Bidder",
               validate: "required"
             },
             {
               name: "Project developer",
               type: "text",
               width: 150,
-              title: "Project developer"
+              title: "Project Developer"
             },
             {
               name: "Current owner",
               type: "text",
               width: 120,
-              title: "Current owner"
+              title: "Current Owner"
             },
             {
-              name: "Tender/scheme name",
+              name: "Tender/scheme Name",
               type: "text",
               width: 200,
 
-              title: "Tender/scheme name"
+              title: "Tender/scheme Name"
             },
             {
               name: "Project location (State)",
               type: "text",
               width: 195,
-              title: "Project location (State)"
+              title: "Project Location (State)"
             },
             {
               name: "AC capacity (MW)",
               width: 150,
               align: "right",
               type: "text",
-              title: "AC capacity(MW)"
+              title: "AC Capacity(MW)"
             },
             {
               name: "Tariif (INR/kWh)",
@@ -2070,14 +2069,14 @@
               name: "VGF(INR million/ MW)",
               type: "text",
               width: 160,
-              title: "VGF(INR million / MW)"
+              title: "VGF(INR Million / MW)"
             },
 
             {
               name: "Project status",
               type: "text",
               width: 120,
-              title: "Project status"
+              title: "Project Status"
             },
 
             {
@@ -2090,13 +2089,13 @@
               name: "Auction date",
               type: "text",
               width: 120,
-              title: "Auction date"
+              title: "Auction Date"
             },
             {
               name: "Estimated/ actual PPA signing date",
               type: "text",
               width: 160,
-              title: "Estimated/ actual PPA signing date"
+              title: "Estimated/ Actual PPA Signing Date"
             }
             //   { type: "control" }
           ],
@@ -2130,39 +2129,40 @@
             name: "Organisation/ bidder",
             type: "text",
             width: 150,
+            title: "Organisation/ Bidder",
             validate: "required"
           },
           {
             name: "Project developer",
             type: "text",
             width: 150,
-            title: "Project developer"
+            title: "Project Developer"
           },
           {
             name: "Current owner",
             type: "text",
             width: 120,
-            title: "Current owner"
+            title: "Current Owner"
           },
           {
-            name: "Tender/scheme name",
+            name: "Tender/scheme Name",
             type: "text",
             width: 200,
 
-            title: "Tender/scheme name"
+            title: "Tender/scheme Name"
           },
           {
             name: "Project location (State)",
             type: "text",
             width: 195,
-            title: "Project location (State)"
+            title: "Project Location (State)"
           },
           {
             name: "AC capacity (MW)",
             width: 150,
             align: "right",
             type: "text",
-            title: "AC capacity(MW)"
+            title: "AC Capacity(MW)"
           },
           {
             name: "Tariif (INR/kWh)",
@@ -2174,14 +2174,14 @@
             name: "VGF(INR million/ MW)",
             type: "text",
             width: 160,
-            title: "VGF(INR million / MW)"
+            title: "VGF(INR Million / MW)"
           },
 
           {
             name: "Project status",
             type: "text",
             width: 120,
-            title: "Project status"
+            title: "Project Status"
           },
 
           {
@@ -2194,13 +2194,13 @@
             name: "Auction date",
             type: "text",
             width: 120,
-            title: "Auction date"
+            title: "Auction Date"
           },
           {
             name: "Estimated/ actual PPA signing date",
             type: "text",
             width: 160,
-            title: "Estimated/ actual PPA signing date"
+            title: "Estimated/ Actual PPA Signing Date"
           }
           //   { type: "control" }
         ],

@@ -473,7 +473,7 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="#">Home</a>
+            <a href="../../home.html">Home</a>
           </li>
           <li class="breadcrumb-item">
             <a href="grid_gridlist.html">Grid </a>
@@ -484,14 +484,14 @@
         </ol>
       </nav>
       <!-- Breadcrumb Section End -->
-      <h1 class="heading m-b-25">Solar -bits</h1>
+      <h1 class="heading m-b-25">Solar - Grid</h1>
       <div class="row">
         <div class="col-md-10 text-left">
           <h5 style="display: inline-block;">Description:</h5>
           <span class="ml-2 sub_heading_style">
-            Well it does kind of look different. Doesn’t it? And if we slapped
-            some margin onto the CSS Grid it would look just like the table. And
-            I guess that’s nice.</span
+            Defines the columns and rows of the grid with a space-separated list
+            of values. The values represent the track size, andthe space between
+            them represents the grid line.</span
           >
         </div>
       </div>
@@ -724,13 +724,21 @@
       });
     </script>
     <script>
-      var clients = [];
-
-      var countries = [
-        { Name: "", Id: 0 },
-        { Name: "United States", Id: 1 },
-        { Name: "Canada", Id: 2 },
-        { Name: "United Kingdom", Id: 3 }
+      var clients = [
+        {
+          "Organisation/ bidder": "",
+          "Project developer": " ",
+          "Current owner": "",
+          "Tender/scheme name": "",
+          "Project location (State)": "",
+          "AC capacity (MW)": "",
+          "Tariif (INR/kWh)": "",
+          "VGF(INR million/ MW)": "",
+          "Project status": "",
+          COD: "",
+          "Auction date": "",
+          "Estimated/ actual PPA signing date": ""
+        }
       ];
 
       $("#jsGrid").jsGrid({
@@ -743,76 +751,85 @@
         // paging: true,
 
         data: clients,
-
+        noDataContent: "Data Not Found",
+        // headercss="jsgrid-grid-header jsgrid-header-scrollbar Girdheadercss",
         fields: [
           {
             name: "Organisation/ bidder",
             type: "text",
-            width: 90,
+            width: 150,
+            title: "Organisation/ Bidder",
             validate: "required"
           },
           {
             name: "Project developer",
             type: "text",
-            width: 90,
-            title: "Project developer"
+            width: 150,
+            title: "Project Developer"
           },
           {
             name: "Current owner",
             type: "text",
-            width: 90,
-            title: "Current owner"
+            width: 120,
+            title: "Current Owner"
           },
           {
-            name: "Tender/scheme name",
+            name: "Tender/scheme Name",
             type: "text",
             width: 200,
 
-            title: "Tender/scheme name"
+            title: "Tender/scheme Name"
           },
           {
             name: "Project location (State)",
             type: "text",
-            width: 125,
-            title: "Project location (State)"
+            width: 195,
+            title: "Project Location (State)"
           },
           {
             name: "AC capacity (MW)",
-            width: 90,
+            width: 150,
+            align: "right",
             type: "text",
-            title: "AC capacity(MW)"
+            title: "AC Capacity(MW)"
           },
           {
             name: "Tariif (INR/kWh)",
             type: "text",
+            width: 120,
             title: "Tariif (INR/kWh)"
           },
           {
             name: "VGF(INR million/ MW)",
             type: "text",
-            title: "VGF(INR million / MW)"
+            width: 160,
+            title: "VGF(INR Million / MW)"
           },
 
           {
             name: "Project status",
             type: "text",
-            title: "Project status"
+            width: 120,
+            title: "Project Status"
           },
 
           {
             name: "COD",
             type: "text",
+            width: 100,
             title: "COD"
           },
           {
             name: "Auction date",
             type: "text",
-            title: "Auction date"
+            width: 120,
+            title: "Auction Date"
           },
           {
             name: "Estimated/ actual PPA signing date",
             type: "text",
-            title: "Estimated/ actual PPA signing date"
+            width: 160,
+            title: "Estimated/ Actual PPA Signing Date"
           }
           //   { type: "control" }
         ]
