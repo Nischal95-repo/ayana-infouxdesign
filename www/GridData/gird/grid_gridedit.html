@@ -527,7 +527,37 @@
           <!-- Form Section start -->
           <div class="col-md-12 col-lg-12 " style="margin-top: 14px;">
             <!-- <input type="button" value="Download" class="btn btn-danger m-2" /> -->
-            <a href="#" style="color: #61951A;" title="Download">
+            <a href="#" title="Upload " onclick="UploadExcel()">
+              <?xml version="1.0"?>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1"
+                id="Layer_1"
+                x="0px"
+                y="0px"
+                viewBox="0 0 512 512"
+                style="enable-background:new 0 0 512 512;"
+                xml:space="preserve"
+                width="18px"
+                height="18px"
+              >
+                <g>
+                  <g>
+                    <g>
+                      <path
+                        d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M356.416,228.416    c-4.16,4.16-9.621,6.251-15.083,6.251c-5.461,0-10.923-2.091-15.083-6.251l-48.917-48.917V384    c0,11.776-9.536,21.333-21.333,21.333s-21.333-9.557-21.333-21.333V179.499l-48.917,48.917c-8.341,8.341-21.824,8.341-30.165,0    s-8.341-21.824,0-30.165l85.312-85.312c1.963-1.984,4.331-3.541,6.955-4.629c5.205-2.155,11.093-2.155,16.299,0    c2.624,1.088,4.992,2.645,6.955,4.629l85.312,85.312C364.757,206.592,364.757,220.075,356.416,228.416z"
+                        data-original="#000000"
+                        class="active-path"
+                        data-old_color="#000000"
+                        fill="#61951A"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <a href="#" style="color: #61951A;" class="ml-3" title="Download">
               <?xml version="1.0"?>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -786,6 +816,14 @@
               </svg>
             </figure>
             <h1 class="heading m-l-28" id="headingView">View</h1>
+            <input
+              type="button"
+              onclick="addRecord()"
+              class="btn btn-danger marginauto"
+              style="margin-left: 76%;"
+              value="Insert"
+              data-dismiss="modal"
+            />
             <a href="#" data-dismiss="modal" class="link-click marginauto">
               <svg
                 x="0px"
@@ -823,7 +861,7 @@
               </svg>
             </a>
           </div>
-          <div class="modal-body editgridRow">
+          <div class="modal-body ">
             <div class="viewdata" id="viewdata">
               <div class="row">
                 <div class="col-md-4">
@@ -1749,6 +1787,278 @@
       </div>
     </div>
     <!-- add recod pop up end -->
+
+    <!-- upload excel file -->
+    <div
+      class="modal fade popup-style-1"
+      id="UploadExcel"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered popvalue" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <figure>
+              <svg
+                x="0px"
+                y="0px"
+                width="35px"
+                height="35px"
+                viewBox="0 0 16 16"
+              >
+                <g transform="translate(0, 0)">
+                  <path
+                    fill="none"
+                    stroke="#444444"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    d="M14.5,15.5h-13 c-0.552,0-1-0.448-1-1v-13c0-0.552,0.448-1,1-1h13c0.552,0,1,0.448,1,1v13C15.5,15.052,15.052,15.5,14.5,15.5z"
+                  ></path>
+                  <line
+                    fill="none"
+                    stroke="#444444"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    x1="0.5"
+                    y1="4.5"
+                    x2="15.5"
+                    y2="4.5"
+                  ></line>
+                  <line
+                    data-color="color-2"
+                    fill="none"
+                    stroke="#444444"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    x1="2.5"
+                    y1="2.5"
+                    x2="4.5"
+                    y2="2.5"
+                  ></line>
+                </g>
+              </svg>
+            </figure>
+            <h1 class="heading m-l-28" id="UploadFileHeading">Upload</h1>
+            <h5
+              class="ml-2 sub_heading_style text-right mr-1"
+              style="width: 100%; display: none"
+              id="totalRows"
+            >
+              Total Number Of Rows :10
+            </h5>
+            <a href="#" data-dismiss="modal" class="link-click marginauto">
+              <svg
+                x="0px"
+                y="0px"
+                width="16px"
+                height="16px"
+                viewBox="0 0 16 16"
+                enable-background="new 0 0 16 16"
+                xml:space="preserve"
+              >
+                <g>
+                  <line
+                    fill="none"
+                    stroke="#69951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    x1="3.25"
+                    y1="3.25"
+                    x2="12.75"
+                    y2="12.75"
+                  ></line>
+                  <line
+                    fill="none"
+                    stroke="#69951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    x1="12.75"
+                    y1="3.25"
+                    x2="3.25"
+                    y2="12.75"
+                  ></line>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="modal-body">
+            <div class="row" id="loadExcelFile">
+              <div class="col-md-5">
+                <input type="file" value="" />
+              </div>
+              <div class="col-md-4">
+                <button
+                  type="button"
+                  class="btn btn-danger mb-2"
+                  onclick="UploadFile()"
+                >
+                  Preview
+                </button>
+              </div>
+            </div>
+            <div class="row" id="fileuploadId" style="display: none;">
+              <div class="col-md-12">
+                <div id="uploadData"></div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-md-12 col-lg-7">
+                  <button type="button" class="btn btn-danger">
+                    Upload
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn btn-light m-l-50"
+                    onclick="UploadFileCancel()"
+                  >
+                    cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end upload excel file -->
+    <!-- grid option  -->
+    <!-- <div
+      class="modal fade popup-style-1"
+      id="gridOption"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered popvalue" role="document">
+        <div class="modal-content" style="width: 67%;margin-left: 18%;">
+          <div class="modal-header">
+            <figure>
+              <svg
+                x="0px"
+                y="0px"
+                width="35px"
+                height="35px"
+                viewBox="0 0 16 16"
+              >
+                <g transform="translate(0, 0)">
+                  <path
+                    fill="none"
+                    stroke="#444444"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    d="M14.5,15.5h-13 c-0.552,0-1-0.448-1-1v-13c0-0.552,0.448-1,1-1h13c0.552,0,1,0.448,1,1v13C15.5,15.052,15.052,15.5,14.5,15.5z"
+                  ></path>
+                  <line
+                    fill="none"
+                    stroke="#444444"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    x1="0.5"
+                    y1="4.5"
+                    x2="15.5"
+                    y2="4.5"
+                  ></line>
+                  <line
+                    data-color="color-2"
+                    fill="none"
+                    stroke="#444444"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    x1="2.5"
+                    y1="2.5"
+                    x2="4.5"
+                    y2="2.5"
+                  ></line>
+                </g>
+              </svg>
+            </figure>
+            <h1 class="heading m-l-28">ACTION(s)</h1>
+            <a href="#" data-dismiss="modal" class="link-click marginauto">
+              <svg
+                x="0px"
+                y="0px"
+                width="16px"
+                height="16px"
+                viewBox="0 0 16 16"
+                enable-background="new 0 0 16 16"
+                xml:space="preserve"
+              >
+                <g>
+                  <line
+                    fill="none"
+                    stroke="#69951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    x1="3.25"
+                    y1="3.25"
+                    x2="12.75"
+                    y2="12.75"
+                  ></line>
+                  <line
+                    fill="none"
+                    stroke="#69951a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    x1="12.75"
+                    y1="3.25"
+                    x2="3.25"
+                    y2="12.75"
+                  ></line>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="modal-body">
+            <div class="row" id="loadExcelFile">
+              <div class="col-md-5">
+                <button
+                  type="button"
+                  onclick="addRecord()"
+                  class="btn btn-danger mb-2"
+                  data-dismiss="modal"
+                >
+                  Add
+                </button>
+              </div>
+              <div class="col-md-3">
+                <button
+                  type="button"
+                  data-dismiss="modal"
+                  onclick="editRecord()"
+                  class="btn btn-danger mb-2"
+                >
+                  Edit
+                </button>
+              </div>
+              <div class="col-md-3">
+                <button
+                  type="button"
+                  data-dismiss="modal"
+                  class="btn btn-light m-l-50"
+                  onclick="UploadFileCancel()"
+                >
+                  cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- end grid option -->
     <!-- Script files -->
     <script src="../../js/jquery-3.3.1.min.js"></script>
     <link
@@ -1776,6 +2086,26 @@
       function addRecord() {
         $("#gridRecordAdd").modal("show");
         //   location.replace("createGrid.html");
+      }
+      function editRecord() {
+        $("#gridRecordView").modal("show");
+      }
+      function UploadExcel() {
+        $("#UploadExcel").modal("show");
+        //   location.replace("createGrid.html");
+      }
+      function UploadFile() {
+        document.getElementById("fileuploadId").style.display = "block";
+        document.getElementById("UploadFileHeading").innerHTML = "Preview";
+
+        document.getElementById("totalRows").style.display = "block";
+        document.getElementById("loadExcelFile").style.display = "none";
+      }
+      function UploadFileCancel() {
+        document.getElementById("totalRows").style.display = "none";
+        document.getElementById("fileuploadId").style.display = "none";
+        document.getElementById("UploadFileHeading").innerHTML = "Upload";
+        document.getElementById("loadExcelFile").style.display = "flex";
       }
     </script>
     <script>
@@ -1995,6 +2325,62 @@
           COD: "",
           "Auction date": "09/11/2018",
           "Estimated/ actual PPA signing date": "08/01/2019"
+        },
+        {
+          "Organisation/ bidder": "NTPC",
+          "Project developer": "NTPC ",
+          "Current owner": "NTPC",
+          "Tender/scheme name": "NTPC Andaman and Nicobar 17 MW, Nov-2018",
+          "Project location (State)": "Andaman and Nicobar",
+          "AC capacity (MW)": "17",
+          "Tariif (INR/kWh)": "NA",
+          "VGF(INR million/ MW)": "NA",
+          "Project status": "Pipeline",
+          COD: "",
+          "Auction date": "09/11/2018",
+          "Estimated/ actual PPA signing date": "08/01/2019"
+        },
+        {
+          "Organisation/ bidder": "NTPC",
+          "Project developer": "NTPC ",
+          "Current owner": "NTPC",
+          "Tender/scheme name": "NTPC Andaman and Nicobar 17 MW, Nov-2018",
+          "Project location (State)": "Andaman and Nicobar",
+          "AC capacity (MW)": "17",
+          "Tariif (INR/kWh)": "NA",
+          "VGF(INR million/ MW)": "NA",
+          "Project status": "Pipeline",
+          COD: "",
+          "Auction date": "09/11/2018",
+          "Estimated/ actual PPA signing date": "08/01/2019"
+        },
+        {
+          "Organisation/ bidder": "NTPC",
+          "Project developer": "NTPC ",
+          "Current owner": "NTPC",
+          "Tender/scheme name": "NTPC Andaman and Nicobar 17 MW, Nov-2018",
+          "Project location (State)": "Andaman and Nicobar",
+          "AC capacity (MW)": "17",
+          "Tariif (INR/kWh)": "NA",
+          "VGF(INR million/ MW)": "NA",
+          "Project status": "Pipeline",
+          COD: "",
+          "Auction date": "09/11/2018",
+          "Estimated/ actual PPA signing date": "08/01/2019"
+        },
+        {
+          "Organisation/ bidder": "NTPC",
+          "Project developer": "NTPC ",
+          "Current owner": "NTPC",
+          "Tender/scheme name": "NTPC Andaman and Nicobar 17 MW, Nov-2018",
+          "Project location (State)": "Andaman and Nicobar",
+          "AC capacity (MW)": "17",
+          "Tariif (INR/kWh)": "NA",
+          "VGF(INR million/ MW)": "NA",
+          "Project status": "Pipeline",
+          COD: "",
+          "Auction date": "09/11/2018",
+          "Estimated/ actual PPA signing date": "08/01/2019"
         }
       ];
 
@@ -2040,7 +2426,7 @@
               title: "Current Owner"
             },
             {
-              name: "Tender/scheme Name",
+              name: "Tender/scheme name",
               type: "text",
               width: 200,
 
@@ -2213,8 +2599,114 @@
           $.each(keys, function(idx, value) {
             text.push(value + " : " + getData[value]);
           });
+          // $("#gridOption").modal("show");
           $("#gridRecordView").modal("show");
           $("#label").text(text.join(", "));
+        }
+      });
+
+      $("#uploadData").jsGrid({
+        width: "100%",
+        height: "340px",
+
+        // filtering: true,
+        //  editing: true,
+        // sorting: true,
+        // paging: true,
+
+        data: clients,
+
+        fields: [
+          {
+            name: "Organisation/ bidder",
+            type: "text",
+            width: 150,
+            title: "Organisation/ Bidder",
+            validate: "required"
+          },
+          {
+            name: "Project developer",
+            type: "text",
+            width: 150,
+            title: "Project Developer"
+          },
+          {
+            name: "Current owner",
+            type: "text",
+            width: 120,
+            title: "Current Owner"
+          },
+          {
+            name: "Tender/scheme Name",
+            type: "text",
+            width: 200,
+
+            title: "Tender/scheme Name"
+          },
+          {
+            name: "Project location (State)",
+            type: "text",
+            width: 195,
+            title: "Project Location (State)"
+          },
+          {
+            name: "AC capacity (MW)",
+            width: 150,
+            align: "right",
+            type: "text",
+            title: "AC Capacity(MW)"
+          },
+          {
+            name: "Tariif (INR/kWh)",
+            type: "text",
+            width: 120,
+            title: "Tariif (INR/kWh)"
+          },
+          {
+            name: "VGF(INR million/ MW)",
+            type: "text",
+            width: 160,
+            title: "VGF(INR Million / MW)"
+          },
+
+          {
+            name: "Project status",
+            type: "text",
+            width: 120,
+            title: "Project Status"
+          },
+
+          {
+            name: "COD",
+            type: "text",
+            width: 100,
+            title: "COD"
+          },
+          {
+            name: "Auction date",
+            type: "text",
+            width: 120,
+            title: "Auction Date"
+          },
+          {
+            name: "Estimated/ actual PPA signing date",
+            type: "text",
+            width: 160,
+            title: "Estimated/ Actual PPA Signing Date"
+          }
+          //   { type: "control" }
+        ],
+        rowClick: function(args) {
+          console.log(args);
+          var getData = args.item;
+          var keys = Object.keys(getData);
+          var text = [];
+
+          $.each(keys, function(idx, value) {
+            text.push(value + " : " + getData[value]);
+          });
+          // $("#gridRecordView").modal("show");
+          // $("#label").text(text.join(", "));
         }
       });
     </script>
