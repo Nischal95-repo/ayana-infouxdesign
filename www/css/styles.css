@@ -496,6 +496,7 @@ header .info-list li.username a:hover {
 }
 .notifications a {
   position: relative;
+  display: none;
 }
 .notifications a::after {
   content: "";
