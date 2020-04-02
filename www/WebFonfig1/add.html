@@ -501,6 +501,38 @@
               </div>
             </div>
             <div class="row">
+              <div class="col-md-10 col-lg-4">
+                <div class="checkbox-style-1 mb-3">
+                  <div class="form-check" style="padding-left:0px;">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="defaultCheck1"
+                      onclick="appendURL(this)"
+                    /><label
+                      class="form-check-label lableFont"
+                      for="defaultCheck1"
+                      >APPEND URL</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-10 col-lg-5"
+                id="appendURLTextBox"
+                style="display: none;"
+              >
+                <div class="form-group">
+                  <label> Append URL<span style="color:red">*</span></label>
+                  <input
+                    type="text"
+                    class="form-control "
+                    placeholder="Enter Append URl"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
               <div class="col-md-12 col-lg-5">
                 <button
                   type="button"
@@ -613,6 +645,14 @@
     <script>
       function myFunction() {
         location.replace("list.html");
+      }
+      function appendURL(chkPassport) {
+        var dvPassport = document.getElementById("defaultCheck1");
+        chkPassport.checked
+          ? (document.getElementById("appendURLTextBox").style.display =
+              "block")
+          : (document.getElementById("appendURLTextBox").style.display =
+              "none");
       }
     </script>
 

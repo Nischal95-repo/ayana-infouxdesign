@@ -822,6 +822,7 @@
               class="btn btn-danger marginauto"
               style="margin-left: 76%;"
               value="Insert"
+              id="insertButton"
               data-dismiss="modal"
             />
             <a href="#" data-dismiss="modal" class="link-click marginauto">
@@ -2151,11 +2152,14 @@
       //   location.replace("createGrid.html");
       // }
       function editRow() {
+        console.log("im here");
         document.getElementById("headingView").innerHTML = "Edit";
         document.getElementById("editdata").style.display = "block";
         document.getElementById("viewdata").style.display = "none";
+        document.getElementById("insertButton").style.display = "none";
       }
       function closeEditRow() {
+        document.getElementById("insertButton").style.display = "block";
         document.getElementById("headingView").innerHTML = "View";
         document.getElementById("editdata").style.display = "none";
         document.getElementById("viewdata").style.display = "block";
