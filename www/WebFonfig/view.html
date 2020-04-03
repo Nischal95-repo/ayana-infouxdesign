@@ -449,7 +449,7 @@
           <!-- Form Section start -->
           <div class="box-card">
             <div class="row">
-              <div class="col-md-4 col-lg-3">
+              <div class="col-md-4 col-lg-4">
                 <div class="form-group">
                   <label> NAME</label>
                   <input
@@ -478,27 +478,17 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-4 col-lg-3">
+              <div class="col-md-4 col-lg-4">
                 <div class="form-group">
-                  <label>START FROM</label>
+                  <label>PATH</label>
                   <input
                     class="form-control-plaintext"
-                    value="Current Notices"
+                    value=".accordion>.card>.card-header>h2>button"
                     readonly
                   />
                 </div>
               </div>
-              <div class="col-md-4 col-lg-3">
-                <div class="form-group">
-                  <label>END With</label>
-                  <input
-                    class="form-control-plaintext"
-                    value="See All"
-                    readonly
-                  />
-                </div>
-              </div>
-              <div class="col-md-4 col-lg-3">
+              <div class="col-md-4 col-lg-4">
                 <div class="form-group">
                   <label>SEARCH TAG</label>
                   <input
@@ -511,7 +501,63 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6 col-lg-3">
+              <div class="col-md-10 col-lg-4">
+                <div class="checkbox-style-1 mb-3">
+                  <div class="form-check" style="padding-left:0px;">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="defaultCheck1"
+                      disabled
+                      checked
+                      onclick="appendURL(this)"
+                    /><label
+                      class="form-check-label lableFont"
+                      for="defaultCheck1"
+                      >APPEND URL</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-10 col-lg-3" id="appendURLTextBox">
+                <div class="form-group">
+                  <label> Append URL</label>
+                  <input
+                    type="text"
+                    class="form-control-plaintext"
+                    value="https://mnre.gov.in/"
+                    readonly
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-10 col-lg-4">
+                <div class="checkbox-style-1 mb-3">
+                  <div class="form-check" style="padding-left:0px;">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="differentURLPath"
+                      disabled
+                      readonly
+                    /><label
+                      class="form-check-label lableFont"
+                      for="differentURLPath"
+                      >DIFFERENT PATH FOR URL
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-10 col-lg-3" id="differentURLPathTextBox">
+                <div class="form-group">
+                  <label>PATH</label>
+                  <input type="text" class="form-control-plaintext" readonly />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
                 <div class="form-group">
                   <label> Created BY </label>
                   <input
@@ -546,7 +592,7 @@
                 </div>
               </div>
 
-              <div class="col-md-6 col-lg-3">
+              <div class="col-md-6 col-lg-2">
                 <div class="form-group">
                   <label>LAST MODIFIED ON</label>
                   <input
